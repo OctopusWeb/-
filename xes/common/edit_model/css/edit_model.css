@@ -1,0 +1,514 @@
+
+/*字体*/
+@font-face {
+  font-family: "MicrosoftYaHeiGB";
+  src: url("../../font/MicrosoftYaHeiGB.ttf"); }
+@font-face {
+  font-family: "TIMESB";
+  src: url("../../font/TIMESB.TTF"); }
+@font-face {
+  font-family: "TIMESBI";
+  src: url("../../font/TIMESBI.TTF"); }
+/*Reset css*/
+body,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+table,
+td,
+img,
+div,
+dl,
+dt,
+dd,
+input,i {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+img {
+  border: none; }
+
+ul,
+ol {
+  list-style: none; }
+
+input,
+select,
+textarea {
+  outline: none;
+}
+
+textarea {
+  resize: none; }
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+  color: #fff;
+}
+html {
+  background: #081842;
+  font-family: "TIMESB", "MicrosoftYaHeiGB";
+  font-size: 100px;
+  color: #fff;
+}
+
+body {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+/*上标，下标字体大小*/
+sub,sup{
+  font-size: 0.2rem;
+}
+
+/*斜体文字字体样式*/
+i{
+  font-family: "TIMESBI";
+}
+::-webkit-scrollbar {width: 0.06rem;height:0.06rem;}
+::-webkit-scrollbar-track-piece{background-color: rgba(255,255,255,0);}
+::-webkit-scrollbar-thumb{background:#0f4683;min-height: 0.6rem;min-width: 0.06rem;border-radius: 0.1rem;margin-left: 0.3rem;}
+::-webkit-scrollbar-thumb:vertical:hover{background: #165eaf}
+::-webkit-scrollbar-thumb:horizontal:hover{background:#165eaf}
+.body {
+  color: #ffffff;
+  font-size: 0.3rem;
+  line-height: 0.5rem;
+}
+video::-webkit-media-controls-current-time-display{
+	display: none;
+}
+video::-webkit-media-controls-time-remaining-display {
+	display: none;
+}
+.margin-auto {
+  width: 10.24rem;
+  margin: 0 auto;
+}
+
+.wrap {
+  width: 10.24rem;
+  min-height: 100%;
+  overflow: hidden;
+  background-size: 10.24rem;
+  position: absolute;
+  margin: 0 auto;
+}
+/*头部*/
+.header {
+  width: 10.24rem;
+  position: fixed;
+  z-index: 2;
+  height: 1rem;
+}
+/*.header-cover{
+	width: 10.24rem;
+	height: 0.3rem;	
+	position: absolute;
+	left: 0;
+	top: 0.99rem;
+}*/
+.header-text {
+  height: 0.5rem;
+  line-height: 0.5rem;
+  font-size: 0.36rem;
+  margin: 0.5rem 0.8rem 0 0.8rem;
+  color: #ffd200;
+  width: 8.64rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.mc-bg .tab-mask{
+	background: url(../img/mc-mask.png) no-repeat;
+	background-size: 0.6rem 0.4rem;
+}
+.hc-bg .tab-mask{
+	background: url(../img/hc-mask.png) no-repeat;
+	background-size: 0.6rem 0.4rem;
+}
+.mp-bg .tab-mask{
+	background: url(../img/mp-mask.png) no-repeat;
+	background-size: 0.6rem 0.4rem;
+}
+.hp-bg .tab-mask{
+	background: url(../img/hp-mask.png) no-repeat;
+	background-size: 0.6rem 0.4rem;
+}
+/*内容容器*/
+.content {
+  padding: 1.3rem 0.8rem 0.2rem;
+  margin: auto;
+  width: 8.64rem;
+  line-height: 0.5rem;
+}
+
+.show-btn {
+  display: inline-block;
+  height:0.5rem;
+  line-height: 0.5rem;
+  font-size: 0.32rem;
+  color: #00f6ff;
+  padding-right: 0.45rem;
+  background: url(../img/middle-hide-btn.svg) no-repeat center right;
+  background-size: 0.25rem 0.2rem;
+  cursor: pointer;
+}
+.btn-change {
+  background: url("../img/middle-show-btn.svg") no-repeat center right;
+  background-size: 0.2rem 0.25rem;
+}
+/*============   2016/11/04 新增表格样式 开始   ==============*/
+
+/*表格模板基本样式*/
+.table-container{
+  border-left: 0.01rem solid #00c0ff;
+  border-radius: 0.05rem;
+  margin: auto;
+  overflow: hidden;
+  border-bottom: none;
+  border-top: none;
+}
+
+.table-container table {
+  width: 100%;
+  font-size: 0.28rem;
+  color: #ffffff;
+  border-collapse: collapse;
+  margin-left: -0.02rem;
+}
+
+.table-container table tr, .table-container table td {
+  text-align: center;
+  line-height: 0.5rem;
+  background: #041447;
+  border: 0.01rem solid #00c0ff;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+.table-container .table-first,.table-container .table-first td{
+  background: #14296a;
+  font-size: 0.3rem;
+}
+.answer_td{
+	cursor: pointer;
+}
+.answer_td .answer span{
+	top: 0;
+	color: rgba(255, 255, 255, 0);
+}
+/* ================   2016/11/04 新增表格样式 结束   ===============*/
+.drawer{
+  height:0.5rem;
+  line-height: 0.5rem;
+  font-size: 0.32rem;
+  color: #00f6ff;
+  padding-right: 0.45rem;
+  background: url(../img/hide-btn.svg) no-repeat center right;
+  background-size: 0.25rem 0.2rem;
+  cursor: pointer;
+}
+.drawer span{
+  display: inline-block;
+  line-height: 0.5rem;
+}
+.drawer-icon{
+  height: 0.5rem;
+  width: 0.35rem;
+  background: url("../img/drawer.svg") no-repeat;
+  background-size: 0.3rem 0.3rem;
+  background-position: 0rem 0.09rem;
+}
+.box{
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 0.06rem;
+  border: 0.01rem solid #FFFFFF;
+  position: relative;
+  -webkit-transform:rotate(0deg);
+  box-sizing: border-box;
+}
+.video-box{
+  display: inline-block;
+  overflow: hidden;
+  background: #000;
+  /*border-radius: 0.06rem;*/
+  /*border:solid 1px red;*/
+}
+.video-box video{
+}
+/*内容弹框样式*/
+.con_Twindow{
+  /*display: none;*/
+  top:0.5rem;
+  left: 0.4rem;
+  right: 0.4rem;
+  bottom:0.4rem;
+  border: 0.01rem solid #0084FF;
+  border-radius: 0.1rem;
+  background: #00215c;
+  position: fixed;
+  z-index: 3;
+  animation: pop-up 480ms;
+}
+@keyframes pop-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    transform: scale(0.3); }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05); }
+  70% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+.content_Twindow_title{
+  background:#001942;
+  opacity:0.95;
+  width:100%;
+  height:0.7rem;
+  border-top-left-radius:0.1rem;
+  border-top-right-radius: 0.1rem;
+  border-bottom:0.01rem solid #0084FF;
+  text-align:center;
+  line-height:0.7rem;
+  color:#ffd200;
+}
+
+.con_Twindow>.tab-container_2{
+  height:0.64rem;
+  margin:0rem;
+  background:#001942;
+  opacity:0.95;
+}
+.con_Twindow .tab-container_2>div.tab{
+  margin:0;
+}
+.con_Twindow>.tab-container_2 >.tab>.tab-menu{
+  padding:0rem;
+  height:0.64rem;
+  line-height:0.64rem;
+  margin:0rem;
+  left:0;
+}
+.con_Twindow .tab-menu li>b{
+  margin-top:-0.07rem;
+}
+.pop-close{
+  width: 0.40rem;
+  height: 0.40rem;
+  background: url("../img/pop-close.svg") no-repeat;
+  background-size: 0.4rem 0.4rem;
+  position: absolute;
+  right: 0.2rem;
+  top:0.15rem;
+}
+.pop-up-content {
+  /*margin: 0.3rem 0.4rem 0.4rem 0.4rem;*/
+  /*height: 70%;*/
+  position: absolute;
+  top:1rem;
+  right: 0.4rem;
+  bottom:0.4rem;
+  left: 0.4rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.ask-btn{
+  display: inline-block;
+  width: 0.32rem;
+  line-height: 0.32rem;
+  background: url("../img/ask-btn.svg") no-repeat;
+  background-size: 0.32rem 0.32rem;
+  margin: 0 0.2rem;
+  opacity: 1;
+  cursor: pointer;
+}
+.bottom-bar{
+  height: 0.8rem;
+  width: 10.24rem;
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+}
+/*浮动的可以拖动的窗口样式*/
+.move_window{
+  display:none;
+  width:2.98rem;
+  height:1.72rem;
+  border:0.01rem solid #fff;
+  border-radius:0.06rem;
+  position:fixed;
+  right:0.2rem;
+  bottom:0.2rem;
+  z-index:100;
+}
+.move_window_cover_content{
+  width:100%;
+  height:100%;
+  border-radius:0.06rem;
+  overflow:hidden;
+}
+.move_window_cover_content img{
+  width:100%;
+  border-radius:0.06rem;
+  border:none;
+}
+.move_window_cover{
+  text-align:center;
+  line-height:1.72rem;
+  color:#00f6ff;
+  display:none;
+  width:100%;
+  height:100%;
+  background:rgba(1,1,1,0.3);
+  border-radius:0.06rem;
+  position:absolute;
+  top:0;
+  left:0;
+}
+.move_window_close{
+  width:0.35rem;
+  height:0.35rem;
+  position:absolute;
+  top:0.1rem;
+  right:0.1rem;
+  background:url(../img/pop-close.svg) center no-repeat;
+  background-size:100%;
+  cursor: pointer;
+}
+#bgchange{
+  color: #00a7db;
+  margin: auto;
+}
+.mm-bg{
+  background: url(../img/mm-fullScreen-bg.png);
+  background-size: 10.24rem;
+}
+.hm-bg{
+  background: url(../img/hm-fullScreen-bg.png);
+  background-size: 10.24rem;
+}
+.mc-bg{
+  background: url(../img/mc-fullScreen-bg.png);
+  background-size: 10.24rem;
+}
+.hc-bg{
+  background: url(../img/hc-fullScreen-bg.png);
+  background-size: 10.24rem;
+}
+.mp-bg{
+  background: url(../img/mp-fullScreen-bg.png);
+  background-size: 10.24rem;
+}
+.hp-bg{
+  background: url(../img/hp-fullScreen-bg.png);
+  background-size: 10.24rem;
+}
+.imgPopWindow{
+
+}
+.imgText{
+	display: block;
+	background: rgba(0,14,29,0.8);
+	height: 0.5rem;
+	font-size: 0.28rem;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+}
+/*书英物理图片弹框样式*/
+.img-Twindow {
+	width: 9.4rem;
+	height: 6.8rem;
+	position: fixed;
+	background: #00225f;
+	top: 50%;
+	left: 50%;
+	margin: -3.35rem 0 0 -4.7rem;
+	border-radius: 0.06rem;
+	border: 0.01rem solid deepskyblue;
+	display: none;
+	z-index: 100;
+}
+.img-Twindow-img {
+	width: 7.2rem;
+	height: 5.4rem;
+	margin: 0.65rem auto 0 auto;
+	border-radius: 0.06rem;
+	overflow: hidden;
+}
+
+.img-Twindow-img img {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.img-Twindow-img-div {
+	width: 100%;
+	margin-top: 0.4rem;
+	text-align: center;
+}
+
+.img-Twindow>.explain-div-content-left {
+	left: 0.2rem;
+}
+
+.img-Twindow>.explain-div-content-right {
+	right: 0.2rem;
+}
+.explain-div-content-left {
+	display: block;
+	width: 0.5rem;
+	height: 0.5rem;
+	position: absolute;
+	top: 50%;
+	margin-top: -0.25rem;
+	cursor: pointer;
+	font-size: 0.3rem;
+	color: #fff;
+	left: -0.65rem;
+	background: url(../img/left_arrows.svg) center no-repeat;
+	background-size: 100%;
+	opacity: 0.3;
+}
+
+.explain-div-content-right {
+	display: block;
+	width: 0.5rem;
+	height: 0.5rem;
+	position: absolute;
+	top: 50%;
+	margin-top: -0.25rem;
+	cursor: pointer;
+	font-size: 0.3rem;
+	color: #fff;
+	right: -0.65rem;
+	background: url(../img/right_arrows.svg) center no-repeat;
+	background-size: 100%;
+}

@@ -1,0 +1,40 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="26px" height="13px" viewBox="0 0 26 13">
+<defs>
+<g id="Mask_FlashAICB_0____1__Clip_Group__0_2_MASK_0_FILL">
+<path fill="#FFFFFF" stroke="none" d="
+M 26.5 14.2
+L 26.5 1.45 1 1.45 1 14.2 26.5 14.2 Z"/>
+</g>
+
+<g id="FlashAICB_0____1__Clip_Group__0_Layer2_0_FILL">
+<path fill="#1C4683" stroke="none" d="
+M 27.4 0
+L 0 0 13.7 14.1 27.4 0 Z"/>
+</g>
+
+<g id="FlashAICB_0____1__Clip_Group__0_Layer2_1_FILL">
+<path fill="#120936" stroke="none" d="
+M 23.9 0.85
+L 3.5 0.85 13.7 11.25 23.9 0.85 Z"/>
+</g>
+</defs>
+
+<g transform="matrix( 1, 0, 0, 1, -1.4,-1.45) ">
+<mask id="Mask_Mask_1">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Mask_FlashAICB_0____1__Clip_Group__0_2_MASK_0_FILL"/>
+</g>
+</mask>
+
+<g mask="url(#Mask_Mask_1)">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#FlashAICB_0____1__Clip_Group__0_Layer2_0_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#FlashAICB_0____1__Clip_Group__0_Layer2_1_FILL"/>
+</g>
+</g>
+</g>
+</svg>

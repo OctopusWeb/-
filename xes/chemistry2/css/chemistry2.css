@@ -1,0 +1,1612 @@
+/*字体*/
+
+@font-face {
+	font-family: "MicrosoftYaHeiGB";
+	src: url("../../common/font/MicrosoftYaHeiGB.ttf");
+}
+
+@font-face {
+	font-family: "TIMESB";
+	src: url("../../common/font/TIMESB.TTF");
+}
+
+@font-face {
+	font-family: "TIMESBI";
+	src: url("../../common/font/TIMESBI.TTF");
+}
+
+
+/*Reset css*/
+
+body,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+table,
+td,
+img,
+div,
+dl,
+dt,
+dd,
+input,
+i {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+img {
+	border: none;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+input,
+select,
+textarea {
+	outline: none;
+}
+
+textarea {
+	resize: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+	text-decoration: none;
+	color: #fff;
+}
+
+pre {
+	display: block;
+	font-family: "TIMESB", "MicrosoftYaHeiGB";
+	white-space: pre;
+}
+
+
+/*浮动*/
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+
+/*清除浮动*/
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+html {
+	background: #081842;
+	font-family: "TIMESB", "MicrosoftYaHeiGB";
+	font-size: 100px;
+	color: #fff;
+}
+
+body {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
+
+
+/*上标，下标字体大小*/
+
+sub,
+sup {
+	font-size: 0.2rem;
+}
+
+
+/*斜体文字字体样式*/
+
+i {
+	font-family: "TIMESBI";
+}
+
+.body {
+	color: #ffffff;
+	font-size: 0.3rem;
+}
+
+.margin-auto {
+	width: 10.24rem;
+	margin: 0 auto;
+}
+
+.warp {
+	width: 10.24rem;
+	min-height: 100%;
+	overflow: hidden;
+	background: url(../img/fullScreen_bg.png);
+	background-size: 10.24rem;
+	position: absolute;
+	margin: 0 auto;
+}
+/*============================头部样样式===================*/
+.header {
+	width: 10.24rem;
+	position: fixed;
+	height: auto;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	background:url(../img/fullScreen_bg.png) center no-repeat;
+	background-size:100%;
+}
+
+
+.header-text {
+	height: 0.5rem;
+	width: 50%;
+	line-height: 0.5rem;
+	font-size: 0.36rem;
+	margin: 0.3rem 0.8rem 0rem 0.8rem;
+	color: #ffd200;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.warp-high{
+	background: url(../img/fullScreen_bg_high.png);
+	background-size: 10.24rem;
+}
+.warp-high>.header{
+	background: url(../img/fullScreen_bg_high.png);
+	background-size:100%;
+}
+.warp-high>.header .tab-mask{
+	background:url(../img/hc-mask.png)center no-repeat;
+	background-size:100%;
+}
+.warp-high>.header li>b{
+	background:url(../img/title_sharpAngle_high.svg)center no-repeat;
+	background-size:100%;
+}
+/*=============================tab选项卡样式==========================*/
+
+
+/*外层div*/
+
+.tab-container {
+	width: 100%;
+	position: relative;
+	margin: 0.3rem 0 0 0;
+}
+
+
+/*二层div*/
+
+.tab {
+	width: 7.8rem;
+	height: 0.82rem;
+	line-height: 0.5rem;
+	margin-left: 0.8rem;
+	overflow: hidden;
+	position: relative;
+}
+
+
+/*ul层*/
+
+.tab>.tab-menu {
+	width: 100rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.tab>.tab-menu li {
+	padding: 0;
+	padding-right: 0.6rem;
+	float: left;
+	font-size: 0.28rem;
+	color: rgba(255, 255, 255, 0.7);
+	position: relative;
+	cursor: pointer;
+}
+
+
+/*current当前选中的li样式*/
+
+.tab>.tab-menu li.current {
+	color: rgba(0, 246, 255, 1);
+}
+
+
+
+
+/*li下面的小箭头的样式*/
+
+.tab-menu li>b {
+	background: url(../img/title_sharpAngle.svg);
+	width: 0.25rem;
+	height: 0.17rem;
+	-webkit-background-size: 0.25rem 0.17rem;
+	background-size: 0.25rem 0.17rem;
+	position: absolute;
+	left: 50%;
+	margin-left: -0.41rem;
+	margin-top: 0.094rem;
+	z-index: 1;
+	display: none;
+}
+
+.tab-menu li.current>b {
+	display: block;
+}
+
+
+
+/*tab选项卡下面分割线的样式*/
+.line {
+	width: 100%;
+	height: 0.12rem;
+	border-top: 0.02rem solid #0e3e95;
+	position: absolute;
+	top: 0.62rem;
+}
+/*遮盖层*/
+.tab-mask {
+	width: 0.6rem;
+	height: 0.5rem;
+	background: url(../img/mc-mask.png) no-repeat;
+	-webkit-background-size: 0.6rem 0.4rem;
+	background-size: 0.6rem 0.4rem;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+
+.bottom-mask-wrapper {
+	position: fixed;
+	bottom: 0.8rem;
+	width: 10.24rem;
+	z-index: 98;
+}
+
+
+.bottom-mask {
+	background: url(../img/mengban.png) repeat-x 0 0;
+	width: 8.64rem;
+	height: 0.8rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*tab选项左右切换*/
+.tab-switch {
+	height: 0.4rem;
+	padding: 0.05rem 0;
+	position: absolute;
+	right: 0;
+}
+
+
+.tab-switch>.left-btn,
+.tab-switch>.right-btn {
+	display: inline-block;
+	width: 0.4rem;
+	height: 0.4rem;
+	cursor: pointer;
+}
+
+
+.tab-switch>.left-btn {
+	opacity: 0.4;
+	margin-right: 0.45rem;
+	background: url("../img/title_leftBtn.svg") center no-repeat;
+	-webkit-background-size: 0.4rem 0.4rem;
+	background-size: 0.4rem 0.4rem;
+	cursor: auto;
+}
+.tab-switch>.right-btn {
+	background: url("../img/title_rightBtn.svg") center no-repeat;
+	-webkit-background-size: 0.4rem 0.4rem;
+	background-size: 0.4rem 0.4rem;
+	margin-right: 0.2rem;
+}
+/*==========================内容容器=====================*/
+.content {
+	padding: 0rem 0.8rem 0rem;
+	margin: auto;
+	width: 8.64rem;
+	line-height: 0.5rem;
+}
+.nextPage-btn,
+.prevPage-btn {
+	display: block;
+	width: 0.5rem;
+	height: 0.5rem;
+	position: fixed;
+	top: 50%;
+	margin-top: -0.25rem;
+	cursor: pointer;
+	font-size: 0.3rem;
+	color: #fff;
+}
+.nextPage-btn {
+	left: 0.17rem;
+	background: url(../img/left_arrows.svg) center no-repeat;
+	background-size: 100%;
+}
+.prevPage-btn {
+	right: 0.17rem;
+	background: url(../img/right_arrows.svg) center no-repeat;
+	background-size: 100%;
+}
+/*======================================二级标题以及内容样式===================*/
+.second-title {
+	width: 100%;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	margin-bottom: 0.1rem;
+	color: #00F6FF;
+	font-size: 0.32rem;
+	cursor: pointer;
+}
+.second-title span {
+	color: #fff;
+	opacity: 0;
+	font-size: 0.3rem;
+	margin-left: 1rem;
+}
+.second-title .second-title-imgspan {
+	margin-left: 0.2rem;
+	color: rgba(1, 1, 1, 0);
+	background: url(../img/second_title_img.svg) center no-repeat;
+	background-size: 100%;
+	cursor: pointer;
+	position: absolute;
+	opacity: 1;
+}
+.second-title-content {
+	width: 100%;
+	min-height: 1rem;
+	opacity: 0;
+}
+/*==============================================填空题的样式     ============*/
+.Completion-div>.font-result {
+	border-bottom: 0.01rem solid #fff;
+	color: rgba(1, 1, 1, 0);
+	line-height: 0.1rem;
+	padding: 0 0.1rem;
+	padding-bottom: 0.1rem;
+	position: relative;
+	top: -0.1rem;
+}
+.Completion-div>.font-result-clickimg {
+	margin-left: 0.05rem;
+	margin-right: 0.1rem;
+	color: rgba(1, 1, 1, 0);
+	background: url(../img/query_nbsp.svg)center no-repeat;
+	background-size: 100%;
+	cursor: pointer;
+}
+
+.font-explain {
+	font-size: 0.24rem;
+}
+
+.font-emphasis {
+	color: #ffd200;
+}
+
+
+/*================================= 选择题模块样式=====================*/
+
+.example-explain-div p {
+	padding-left: 0.3rem;
+	min-height: 0.5rem;
+	margin: 0 0 0.1rem 0;
+	line-height: normal;
+}
+
+.example-explain-div p span {
+	margin-left: -0.3rem;
+}
+
+.query-span {
+	display: inline-block;
+	min-width: 0.3rem;
+	height: 0.3rem;
+	text-align: center;
+	line-height: 0.3rem;
+	background: url(../img/query_nbsp.svg);
+	background-size: 100%;
+	cursor: pointer;
+}
+
+.example-explain-div-TImg {
+	width: 5.2rem;
+	height: 3rem;
+	margin: 0 auto 0.4rem auto;
+	background: red;
+	overflow: hidden;
+}
+
+.example-explain-div-TImg img {
+	width: 100%;
+}
+
+.example-explain-div-result {
+	width: 100%;
+	position: relative;
+}
+
+#LRimg p {
+	width: 3.5rem;
+}
+
+.example-explain-div-RImg {
+	width: 3.9rem;
+	height: 2.92rem;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	margin-top: -1.46rem;
+	background: red;
+}
+
+.example-explain-div-CImg {
+	width: 0.05rem;
+	min-height: 2.4rem;
+	position: absolute;
+	top: 50%;
+	right: 4.35rem;
+	margin-top: -1.2rem;
+	background: url(../img/border_line.png) center no-repeat;
+	background-size: 100%;
+}
+
+
+/*=====================步骤讲解模块====================*/
+.explain-div {
+	width: 100%;
+	min-height: 1rem;
+}
+
+.explain-div-img {
+	width: 5.2rem;
+	height: 3rem;
+	margin: 0 auto;
+	border: 1px solid #fff;
+	border-radius: 0.03rem;
+}
+
+.explain-div-content {
+	width: 100%;
+	height: 2.4rem;
+	margin: 0.2rem 0 0 0;
+	position: relative;
+	font-size: 0.3rem;
+}
+
+.explain-div-content-box {
+	width: 100%;
+	height: 2.4rem;
+	font-size: 0.3rem;
+	display: -webkit-box;
+	-webkit-box-align: center;
+}
+
+.explain-div-content-box span {
+	display: inline-block;
+	padding: 0 0.3rem 0 0.3rem;
+	line-height: 0.4rem;
+}
+
+.explain-div-content i {
+	display: block;
+	width: 0.05rem;
+	height: 2.4rem;
+	background: url(../img/border_line.png) center no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 0px;
+}
+
+.border-div-left {
+	left: -0.05rem;
+}
+
+.border-div-right {
+	right: -0.05rem;
+}
+
+.explain-div-content-left {
+	display: block;
+	width: 0.5rem;
+	height: 0.5rem;
+	position: absolute;
+	top: 50%;
+	margin-top: -0.25rem;
+	cursor: pointer;
+	font-size: 0.3rem;
+	color: #fff;
+	left: -0.65rem;
+	background: url(../img/left_arrows.svg) center no-repeat;
+	background-size: 100%;
+	opacity: 0.3;
+}
+
+.explain-div-content-right {
+	display: block;
+	width: 0.5rem;
+	height: 0.5rem;
+	position: absolute;
+	top: 50%;
+	margin-top: -0.25rem;
+	cursor: pointer;
+	font-size: 0.3rem;
+	color: #fff;
+	right: -0.65rem;
+	background: url(../img/right_arrows.svg) center no-repeat;
+	background-size: 100%;
+}
+
+
+/*========================表格模板基本样式=========================*/
+
+.table-container {
+	border: 0.01rem solid #00c0ff;
+	border-left:none;
+	border-right:none;
+	border-radius: 0.06rem;
+	margin: auto;
+	overflow: hidden;
+	border-bottom: none;
+	border-top: none;
+	font-size: 0.28rem;
+}
+
+.table-glass {
+	display: block;
+	width: 0.2rem;
+	height: 0.2rem;
+	background: url(../img/table_glass.svg) center no-repeat;
+	background-size: 100%;
+	position: absolute;
+	right: 0.1rem;
+	bottom: 0.1rem;
+	cursor: pointer;
+}
+.table-hiddle {
+	color: rgba(1, 1, 1, 0)
+}
+.table-hiddle-H,
+.table-hiddle-L {
+	color: #00F6FF;
+	cursor: pointer;
+}
+
+.table-container table {
+	width: 100%;
+	font-size: 0.3rem;
+	color: #ffffff;
+	border-collapse: collapse;
+	margin-left:0rem;
+}
+
+.table-container table tr,
+.table-container table td {
+	text-align: center;
+	background: #041447;
+	border: 0.01rem solid #00c0ff;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+	position: relative;
+	cursor: pointer;
+}
+
+.table-container>table .table-header {
+	background: #14296A
+}
+/*=====================================================================基本图片展示模块*/
+
+.look-img {
+	width: 8.6rem;
+	min-height: 2rem;
+	margin: 0.4rem auto 0.15rem auto;
+	position: relative;
+}
+
+
+/*包裹图片的div的统一样式*/
+
+.look-img div {
+	border: 0.01rem solid #fff;
+	border-radius: 0.06rem;
+	position: relative;
+}
+
+.look-img span {
+	display: block;
+	width: 100%;
+	height: 0.5rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #000e1d;
+	opacity: 0.8;
+	border-bottom-left-radius: 0.06rem;
+	border-bottom-right-radius: 0.06rem;
+	text-align: center;
+	line-height: 0.5rem;
+	font-size: 0.24rem;
+}
+
+.look-img img {
+	width: 100%;
+	border: none;
+}
+
+.look-img div {
+	overflow: hidden;
+}
+
+.look-img1 {
+	width: 8.6rem;
+	height: 5.7rem;
+	border: 0.01rem solid #fff;
+	border-radius: 0.06rem;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+
+/*====================================================单个大图展示模块===============*/
+
+.look-img1 img {
+	width: 100%;
+}
+
+
+/*=======================================================浏览图片加问题模块 ==============*/
+
+.question-img-box {
+	width: 5.2rem;
+	height: 3rem;
+	margin: 0 auto;
+	position: relative;
+}
+
+.question-img-box>.explain-div-content-left {
+	left: -0.6rem;
+}
+
+.question-img-box>.explain-div-content-right {
+	right: -0.6rem;
+}
+
+.question-img-box-img {
+	width: 100%;
+	height: 100%;
+}
+
+.question-img-box-img img {
+	width: 100%;
+	height: 100%;
+}
+
+.question-img-box-img span {
+	width: 100%;
+	height: 0.5rem;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	line-height: 0.5rem;
+	text-align: center;
+	background: #000e1d;
+	opacity: 0.8;
+	font-family: "TIMESB", "MicrosoftYaHeiGB";
+}
+
+.question-img-box-img span.wenti {
+	display: none;
+}
+
+
+/*========================浏览图片加说明==============*/
+.browse-img-box {
+	width: 100%;
+	height: 5.6rem;
+	margin: 0 auto;
+	position: relative;
+	border: 0.01rem solid #fff;
+	border-radius: 0.06rem;
+}
+
+.browse-img-box-img {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.browse-img-box-img img {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.browse-img-box-img span {
+	display: none;
+}
+
+.browse-img-box-content {
+	width: 77%;
+	height: 0.82rem;
+	padding: 0.2rem 9% 0.2rem 14%;
+	overflow: hidden;
+	position: absolute;
+	border-bottom-left-radius: 0.06rem;
+	border-bottom-right-radius: 0.06rem;
+	background: #000E1D;
+	opacity: 0.8;
+	bottom: 0;
+	left: 0;
+}
+
+.browse-img-box-content-num {
+	position: absolute;
+	top: 0.32rem;
+	left: 0.24rem;
+}
+
+.browse-img-box-content-num> span.num1 {
+	font-size: 0.46rem;
+	color: #FFD200;
+}
+
+.browse-img-box-content-num> span.num2 {
+	font-size: 0.32rem;
+	color: #FFFFFF;
+	opacity: 0.4;
+}
+
+.browse-img-box-content>i.jiantou {
+	width: 0.22rem;
+	height: 0.22rem;
+	position: absolute;
+	top: 0.5rem;
+	right: 0.3rem;
+	background: url(../img/down_arrows.svg) center no-repeat;
+	background-size: 100%;
+}
+.jiantou_mouseover{
+	transform:rotate(180deg);
+	-ms-transform:rotate(180deg); /* Internet Explorer */
+	-moz-transform:rotate(180deg); /* Firefox */
+	-webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+	-o-transform:rotate(180deg); /* Opera */
+}
+
+/*改-黄*/
+.operation-bottom-span1 {
+	font-size: 0.28rem;
+	bottom: -0.6rem;
+	/*margin-left:0.1rem;*/
+	background: url(../img/operation_bottom_span.svg) no-repeat;
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+.operation-bottom-span2 {
+	font-size: 0.28rem;
+	bottom: -0.6rem;
+	margin-left: 1.55rem;
+	background: url(../img/operation_bottom_span.svg) no-repeat;
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+.operation-bottom-span3 {
+	font-size: 0.28rem;
+	bottom: -0.6rem;
+	margin-left: 3.1rem;
+	background: url(../img/operation_bottom_span.svg) no-repeat;
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+.operation-right-span1 {
+	font-size: 0.28rem;
+	top: 0.3rem;
+	right: 0.2rem;
+	/*margin-right:0.2rem;*/
+	background: url(../img/operation_bottom_span.svg) no-repeat;
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+.operation-right-span2 {
+	font-size: 0.28rem;
+	top: 0.85rem;
+	right: 0.2rem;
+	/*margin-right:0.2rem;*/
+	background: url(../img/operation_bottom_span.svg) no-repeat;
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+
+/*改-结束*/
+/*============================================浏览图片的弹出窗口样式*/
+.img-Twindow {
+	width: 9.4rem;
+	height: 6.8rem;
+	position: fixed;
+	background: #00225f;
+	top: 50%;
+	left: 50%;
+	margin: -3.35rem 0 0 -4.7rem;
+	border-radius: 0.06rem;
+	border: 0.01rem solid deepskyblue;
+	display: none;
+	z-index: 102;
+}
+
+.img-Twindow-img {
+	width: 7.2rem;
+	height: 5.4rem;
+	margin: 0.65rem auto 0 auto;
+	border-radius: 0.06rem;
+	overflow: hidden;
+}
+.img-Twindow-img img {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.img-Twindow-img-div {
+	width: 100%;
+	margin-top: 0.4rem;
+	text-align: center;
+}
+
+.img-Twindow>.explain-div-content-left {
+	left: 0.2rem;
+}
+
+.img-Twindow>.explain-div-content-right {
+	right: 0.2rem;
+}
+
+.img-Twindow-close {
+	width: 0.4rem;
+	height: 0.4rem;
+	position: absolute;
+	top: 0.2rem;
+	right: 0.2rem;
+	background: url(../img/close1.svg) center no-repeat;
+	background-size: 100%;
+	cursor: pointer;
+}
+
+.img-Twindow .font-result {
+	border-bottom: 1px solid #fff;
+	color: rgba(1, 1, 1, 0);
+	position: relative;
+	/*padding:0 0.1rem;*/
+}
+
+.img-Twindow .font-result .font-result-clickimg {
+	background: url(../img/query_nbsp.svg)center no-repeat;
+	background-size: 100%;
+	color: rgba(1, 1, 1, 0);
+	cursor: pointer;
+	position: absolute;
+	left: 50%;
+	bottom: 0rem;
+	margin-left: -0.16rem;
+}
+
+
+/*===================================================================文本内容弹框样式--------------------------------------*/
+
+.content-Twindow {
+	/*display:none;*/
+	width: 9.4rem;
+	height: 6.8rem;
+	border: 0.01rem solid #0084FF;
+	border-radius: 0.1rem;
+	background: #00215c;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -3.4rem;
+	margin-left: -4.7rem;
+	z-index: 102;
+}
+.content-Twindow .img-Twindow-close {
+	top: 0.15rem;
+}
+
+.content-Twindow-content {
+	width: 8rem;
+	padding: 0.04rem 0rem;
+	margin: 0 auto;
+	margin-top: 1.53rem;
+	background: #00215C;
+	min-height: 3rem;
+	border: 1px solid red;
+}
+
+.content-Twindow .t-header {
+	width: 100%;
+	min-height: 0.7rem;
+	line-height: 0.7rem;
+	background: #001942;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-top-left-radius: 0.1rem;
+	border-top-right-radius: 0.1rem;
+}
+
+
+
+
+
+/*头部标题样式*/
+.content-Twindow .t-header-text {
+	border-top-left-radius: 0.1rem;
+	border-top-right-radius: 0.1rem;
+	height: 0.7rem;
+	width: 100%;
+	line-height: 0.7rem;
+	text-align: center;
+	background: #001942;
+	color: #ffd200;
+	border-bottom: 0.01rem solid #0084FF;
+}
+
+
+
+
+/*=======================================================文本内容弹框样式tab选项卡样式==========================*/
+/*外层div*/
+.t-tab-container {
+	width: 100%;
+	position: relative;
+}
+
+.content-Twindow .tab-switch>.left-btn{
+	width:0.2rem;
+	height:0.2rem;
+	background:url(../img/window_left.svg) center no-repeat;
+	background-size:100%;
+}
+.content-Twindow .tab-switch>.right-btn{
+	width:0.2rem;
+	height:0.2rem;
+	background:url(../img/window_right.svg) center no-repeat;
+	background-size:100%;
+}
+.content-Twindow .tab-switch{
+	line-height:0.4rem;
+	top:0.06rem;
+}
+/*二层div*/
+.t-tab {
+	width: 7rem;
+	height: 0.8rem;
+	line-height: 0.64rem;
+	overflow: hidden;
+	position: relative;
+	margin-left: 0.7rem;
+}
+/*ul层*/
+.t-tab>.tab-menu {
+	width: 100rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.t-tab>.tab-menu li {
+	padding: 0;
+	padding-right: 0.6rem;
+	float: left;
+	font-size: 0.28rem;
+	color: rgba(255, 255, 255, 0.7);
+	position: relative;
+	cursor: pointer;
+}
+/*current当前选中的li样式*/
+.t-tab>.tab-menu li.current {
+	color: rgba(0, 246, 255, 1);
+}
+/*li下面的小箭头的样式*/
+.content-Twindow li>b {
+	background: url(../img/title_sharpAngle.svg);
+	width: 0.25rem;
+	height: 0.17rem;
+	-webkit-background-size: 0.25rem 0.17rem;
+	background-size: 0.25rem 0.17rem;
+	position: absolute;
+	left: 50%;
+	margin-left: -0.41rem;
+	margin-top: -0.045rem;
+	display: none;
+}
+.content-Twindow li.current>b {
+	display: block;
+}
+/*tab选项卡下面分割线的样式*/
+
+.content-Twindow .line {
+	width: 100%;
+	height: 0.01rem;
+	background: #0e3e95;
+}
+/*遮盖层*/
+
+.content-Twindow .tab-mask {
+	width: 0.6rem;
+	height: 0.5rem;
+	background: url(../img/title_mask.png) no-repeat;
+	-webkit-background-size: 0.6rem 0.4rem;
+	background-size: 0.6rem 0.4rem;
+	position: absolute;
+	top: 0.09rem;
+	right: 0;
+}
+
+
+
+/*=========================================================页面只有一个动画播放div*/
+.animation-div {
+	display:inline-block;
+	min-width:1rem;
+	min-height:1rem;
+	padding:0.6rem 0.6rem 0.8rem 0.6rem;
+	border-radius:0.06rem;
+	background:rgba(38,171,255,0.2);
+	position: relative;
+	margin:0 auto;
+}
+.animation-div-control {
+	width: 0.5rem;
+	height: 0.5rem;
+	background: url(../img/animation_control.svg)center no-repeat;
+	background-size: 100%;
+	position: absolute;
+	bottom: 0.16rem;
+	left: 0.16rem;
+	cursor: pointer;
+}
+
+
+/*===================================================动画弹框的样式=================================*/
+.middle-pop-up {
+	margin-top: 0.4rem;
+}
+.middle-pop-up-btn-box div {
+	border: 0.01rem solid #fff;
+	border-radius: 0.06rem;
+	position: relative;
+	cursor: pointer;
+}
+.middle-pop-up-btn-box>div>span{
+	width: 0.5rem;
+	height: 0.5rem;
+	background: url(../img/animation_control.svg)center no-repeat;
+	background-size: 100%;
+	position: absolute;
+	bottom: 0.16rem;
+	left: 0.16rem;
+}
+.middle-pop-up-btn-box img {
+	width: 100%;
+	border: none;
+}
+.middle-pop-up-btn-box div {
+	overflow: hidden;
+}
+.pop-up {
+	min-height: 70%;
+	background: rgba(0, 33, 92, 0.95);
+	border: solid 0.01rem #0084ff;
+	border-radius: 0.1rem;
+	box-sizing: border-box;
+	position: fixed;
+	z-index: 102;
+	display: none;
+	top: 0.5rem;
+	left: 0.42rem;
+	bottom: 0.4rem;
+	right: 0.42rem;
+	margin-bottom: 1rem;
+	animation: pop-up 480ms;
+}
+.pop-up-title {
+	width: 100%;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	text-align: center;
+	font-size: 0.36rem;
+	color: #ffd400;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	border-bottom: 0.01rem solid #0084ff;
+	border-top-left-radius: 0.1rem;
+	border-top-right-radius: 0.1rem;
+	background: rgba(0, 25, 66, 0.95);
+}
+.pop-up-content {
+	position: absolute;
+	top: 1rem;
+	left: 0.4rem;
+	right: 0.4rem;
+	bottom: 0.4rem;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+.canvas-box {
+	width: 8.64rem;
+	text-align: center;
+}
+.closeBtn {
+	position: absolute;
+	right: 0.2rem;
+	top: 0.15rem;
+	background-image: url("../img/close1.svg");
+	width: 0.4rem;
+	height: 0.4rem;
+	background-size: 0.4rem 0.4rem;
+	cursor: pointer;
+}
+
+
+
+
+
+/*==========================================操控模块样式============================*/
+.operation-box{
+	min-height:4.7rem;
+}
+.operation-div {
+	width: 8.6rem;
+	min-height: 4rem;
+	margin: 0 auto;
+	border: 0.01rem solid #00F6FF;
+	border-radius: 0.06rem;
+	position: relative;
+}
+.operation-div span {
+	display: block;
+	height: 0.45rem;
+	width: 1.45rem;
+	line-height: 0.45rem;
+	text-align: center;
+	position: absolute;
+}
+.operation-bottom-span {
+	bottom: -0.6rem;
+	margin-right: 0.1rem;
+	background: url(../img/operation_bottom_span.svg)center no-repeat;
+	background-size: 100%;
+}
+.operation-right-span {
+	margin-top: 0.1rem;
+	right: 0.02rem;
+	margin-right: 0.2rem;
+	background: url(../img/operation_bottom_span.svg)center no-repeat;
+	background-size: 100%;
+}
+.operation-reset {
+	right: 0rem;
+	bottom: -0.6rem;
+	margin-right: 0.2rem;
+	background: url(../img/operation_bottom_span.svg)center no-repeat;
+	background-size: 100%;
+}
+
+
+
+
+
+
+/*<!--*******###################################*****<!--新增人物介绍格式-->-->*/
+.img_introduction_h {
+	min-height: 2.7rem;
+}
+
+.img_introduction_h img {
+	float: right;
+	width: 3.84rem;
+	border: 0.01rem solid #fff;
+	border-radius: 0.06rem;
+	margin: 0 0 0.3rem 0.3rem;
+	zoom: 1
+}
+
+.img_introduction_h img:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
+
+.side-content-anchor,.side-content-block{
+			width: 0.6rem;
+			min-height:0.70rem;
+			position: fixed;
+			left: 0.1rem;
+			top:50%;
+			border: solid 0.01rem #009fff;
+			font-size: 0.22rem;
+			font-family: "MicrosoftYaHeiGB";
+			border-radius: 0.04rem;
+			display: block;
+			color: #FFFFFF;
+		}
+		
+		.side-content-anchor>span,.side-content-block span{
+			display:block;
+			padding:0.12rem 0.08rem;
+			line-height: 0.22rem;
+			border-bottom: 0.01rem #009fff solid;
+			background:#0053b9;
+			cursor: pointer;
+			position:relative;
+		}
+
+		.side-content-block>span>div{
+			display:none;
+			width:5.8rem;
+			min-height:1.2rem;
+			border:1px solid #009fff;
+			position:absolute;
+			top:0;
+			left:0.73rem;
+			color:#fff;
+			background:#013285;
+			text-align:center;
+			line-height:1.2rem;
+		}
+		.side-content-arrows{
+			display:none;
+			width:0.16rem;
+			height:0.16rem;
+			position:absolute;
+			top:50%;
+			margin-top:-0.08rem;
+			right:-0.2rem;
+			background:url(../img/side_content_arrows.svg)center no-repeat;
+			background-size:100%;
+		}
+/*浮动窗口的页面显示效果*/
+.move-window-classF{
+	width:7.18rem;
+    height:4.0rem;
+	margin:0 auto;
+}
+.move-window-class{
+	width:100%;
+    height:100%;
+}
+.move-window-cover,.move-window-close{
+	display:none;
+}
+.move-window-class>.move-window-cover-content{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	background-color: black;
+}
+.move-window-class>.move-window-cover-content>img{
+	width:100%;
+}
+
+
+
+
+/*=================================================================浮动的可以拖动的窗口样式*/
+#move-window {
+	width: 2.98rem;
+	height: 1.72rem;
+	border: 0.01rem solid #fff;
+	border-radius: 0.06rem;
+	position: fixed;
+	right: 0.2rem;
+	bottom: 0.2rem;
+	z-index: 100;
+}
+#move-window>.move-window-cover-content {
+	width: 100%;
+	height: 100%;
+	border-radius: 0.06rem;
+	overflow: hidden;
+}
+
+#move-window>.move-window-cover-content>img {
+	width: 100%;
+	border-radius: 0.06rem;
+	border: none;
+}
+
+#move-window>.move-window-cover{
+	text-align: center;
+	line-height: 1.72rem;
+	color: #00f6ff;
+	display: none;
+	width: 100%;
+	height: 100%;
+	background: rgba(1, 1, 1, 0.3);
+	border-radius: 0.06rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#move-window>.move-window-close {
+	display:block;
+	width: 0.35rem;
+	height: 0.35rem;
+	position: absolute;
+	top: 0.1rem;
+	right: 0.1rem;
+	background: url(../img/close.svg) center no-repeat;
+	background-size: 100%;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*2016.11.06 新增滚动条样式*/
+
+::-webkit-scrollbar {
+	width: 0.06rem;
+	height: 0.06rem;
+}
+::-webkit-scrollbar-track-piece {
+	background-color: rgba(255, 255, 255, 0);
+}
+::-webkit-scrollbar-thumb {
+	background: #0f4683;
+	min-height: 0.6rem;
+	min-width: 0.06rem;
+	border-radius: 0.1rem;
+	margin-left: 0.3rem;
+}
+::-webkit-scrollbar-thumb:vertical:hover {
+	background: #165eaf
+}
+::-webkit-scrollbar-thumb:horizontal:hover {
+	background: #165eaf
+}
+
+
+/* ================   2016/11/04 弹框样式修改 结束   ===============*/
+/*弹框动画*/
+@keyframes pop-up {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(0.3);
+		transform: scale(0.3);
+	}
+	50% {
+		opacity: 1;
+		-webkit-transform: scale(1.05);
+		transform: scale(1.05);
+	}
+	70% {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+
+
+
+
+
+/*================================================================底部*/
+.bottom-bar {
+	width: 10.24rem;
+	min-height: 0.8rem;
+	position: fixed;
+	bottom: 0;
+}
+.bottom-bar-keyBox {
+	width: 100%;
+	height: 0.8rem;
+	text-align: center;
+	line-height: 0.8rem;
+	background: #062c68;
+}
+.bottom-bar-keyBox span {
+	border: 0.01rem solid #00c0ff;
+	background: #062c68;
+	padding: 0.1rem 0.3rem 0.1rem 0.3rem;
+	border-radius: 0.06rem;
+	cursor: pointer;
+}
+.bottom-bar-background {
+	width: 10.24rem;
+	height: 0.8rem;
+}
+.bg1{
+	background: url(../img/footer_bg_story_1.svg) center no-repeat;
+	background-size: 100%;
+}
+.bg2{
+	background: url(../img/footer_bg_story_2.svg) center no-repeat;
+	background-size: 100%;
+}
+.bg3{
+	background: url(../img/footer_bg_story_3.svg) center no-repeat;
+	background-size: 100%;
+}
+.bg4{
+	background: url(../img/footer_bg_story_4.svg) center no-repeat;
+	background-size: 100%;
+}
+.bg5{
+	background: url(../img/footer_bg_story_5.svg) center no-repeat;
+	background-size: 100%;
+}
+.bg6{
+	background: url(../img/footer_bg_story_6.svg) center no-repeat;
+	background-size: 100%;
+}
+/*粘题模板中图片反色*/
+#pdfToImgBox img {
+	-webkit-filter: invert(1);
+	filter: invert(1);
+}
+
+
+/*新增上下步样式-----黄永强*/
+.animaController {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 7.2rem;
+    height: 4.5rem;
+    border: 1px solid #00BFFF;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.animaController .btn {
+    cursor: pointer;
+    position: absolute;
+    top: 0.16rem;
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.3rem;
+}
+.animaController .contrlBar {
+    position: absolute;
+    /* display: none; */
+    /* opacity: 0; */
+    top: 3.9rem;
+    width: inherit;
+    height: 0.6rem;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.animaController .playBtn {
+    /* left: 0.3rem; */
+    left: 4.2%;
+    background: url(../img/play1.svg) no-repeat;
+    background-size: 0.3rem;
+}
+.animaController .prevStepBtn {
+    /* left: 5.3rem; */
+    left: 73.6%;
+    background: url(../img/prevStepBtn1.svg) no-repeat;
+    background-size: 0.3rem;
+}
+.animaController .nextStepBtn {
+    /* left: 5.9rem; */
+    left: 82%;
+    background: url(../img/nextStepBtn1.svg) no-repeat;
+    background-size: 0.3rem;
+}
+.animaController .line {
+    position: absolute;
+    color: white;
+    font-size: 0.25rem;
+    line-height: 0.25rem;
+    top: 0.16rem;
+    /* left: 6.4rem; */
+    left: 89%;
+    border-top: none;
+}
+.animaController .fullBtn {
+    /* left: 6.7rem; */
+    left: 93%;
+    background: url(../img/fullBtn1.svg) no-repeat;
+    background-size: 0.3rem;
+}
+.canvasBeFull {
+    position: relative;
+    top: 0;
+    width: inherit;
+}
+.animaController .pauseBtn {
+    /* left: 0.3rem; */
+    left: 4.2%;
+    background: url(../img/pause1.svg) no-repeat;
+    background-size: 0.3rem;
+}
+
+
+.popup-shade{
+	display:none;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	background:#000000;
+	z-index:101;
+	opacity:0.9;
+}
+
+
+/*视频容器 thinlong*/
+.video-container
+{
+	width: 7.18rem;
+	height: 4.0rem;	
+	text-align: center;
+	margin-bottom: 0.4rem;
+}
+
+.video-container video
+{
+	height: 100%;	
+}

@@ -1,0 +1,52 @@
+.hui-img{border-radius: 0.05rem;width: 5.20rem;height: 3rem;margin: 0 auto;overflow: hidden;position: relative;}
+.hui-img .imgs{width: 100%;}
+.hui-btngroup{margin: 0 auto;}
+.hui-btn,.hui-btn1{height: 0.48rem;width: 0.47rem;background: linear-gradient(#1b7ade,#0545a7);font-size: 0.24rem;border: 0.01rem #35e4ff solid;
+border-radius: 0.04rem;text-align: center;display: inline-block;margin-left: 0.15rem;margin-top: 0.3rem;cursor: pointer;}
+.hui-btn1{margin-left: -0.8rem;margin-top: 3rem;}
+.hui-btn:active{opacity: 0.7;}
+.green-btn{background: linear-gradient(#2ad105,#069b03);}
+.red-btn{background: linear-gradient(#e23140,#fc5157);}
+.hui-foot{width: 100%;height: 1.84rem;bottom: 0;border-top:0.02rem solid #074288;}
+.foot-left{display: inline-block;margin-left: 0.84rem;margin-top: 0.6rem;float: left;}
+.foot-left-num1{font-size: 0.48rem;display: inline-block;}
+.foot-left-num2{font-size: 0.26rem;display: inline-block;}
+.foot-center{margin-left: 2rem;margin-right: 0;height: 0.1rem;background: #0053b9;border: 0.01rem solid #009fff;
+border-radius: 0.1rem;margin-right: 3rem;margin-top: 0.8rem;}
+.foot-right{display: inline-block;width: 1.78rem;position: relative;height: 1rem;float: right;margin-top: 0.3rem;cursor: pointer;}
+.foot-right img{position: absolute;height: 100%;}
+.foot-num{display: inline-block;float: right;width: 0.9rem;margin-top: 0.7rem;}
+.foot-center-box{width: 0%;background: #0067e6;border-radius: 0.1rem;height: 0.09rem;border: 0.01rem #fff solid;}
+.hide{display: none;position: absolute;left: 0;top: 0;z-index: 1;width: 1.5rem;text-align: center;margin-top: 0.7rem;margin-left: 1.8rem;}
+.hui-last{width: 8.6rem;height: 4.6rem;margin: 0 auto;margin-top: 0.46rem;display: none;}
+.title{position: absolute;width: 100%;height: 0.5rem;background: rgba(0,0,0,0.5);bottom: 0;color: #fff;
+font-size:0.2rem;text-align: center;}
+.hui-group{margin-left: 25%;margin-top: 1.4rem;}
+.hui-group h1{color: #fff;font-size: 1.1rem;float: left;line-height: 1.1rem;position: relative;}
+.hui-group h2{color: #fff;font-size: 0.42rem;float: left;line-height: 1.5rem;position: relative;}
+.hui-group .blue{color: #ffd200;}
+.hui-title{width: 100%;text-align: center;font-size: 0.2rem;margin-top: -0.3rem;}
+#reset{width: 1.53rem;margin-left: 40%;margin-top: 0.2rem;}
+
+.score .scoreGroup{width: 100%;margin-left: 0.8rem;}
+.score ul li{width: 2.14rem;height: 1.16rem;border-bottom: 0.01rem solid #00ffc6;float: left;position: relative;
+border-right: 0.01rem solid #00ffc6;text-align: center;}
+.score ul li h1{color: #fff;font-size: 0.3rem;float: left;line-height: 0.3rem;position: relative;}
+.score ul li h2{color: #fff;font-size: 0.2rem;float: left;line-height: 0.4rem;position: relative;}
+.score ul li .blue{color: #ffd200;}
+.score ul li p{font-size: 0.24rem;width: 100%;text-align: center;margin-top: 0.1rem;display: inline-block;}
+.score ul li img{position: absolute;right: 0.1rem;bottom: 0.1rem;}
+.score ul li .wrong h1,.score ul li .wrong h2,.score ul li .wrong p,.score ul li .wrong .blue{color: #ff0012;}
+.score ul .rightBorder{border-right: none;}
+.score ul .bottomBorder{border-bottom: none;}
+.score ul li:last-child{border:none}
+
+.kapai{
+animation:myfirst 2s;
+animation-direction:normal;
+}	
+@keyframes myfirst
+{
+from {transform: rotateY(0deg);}
+to {transform: rotateY(360deg);}
+}
