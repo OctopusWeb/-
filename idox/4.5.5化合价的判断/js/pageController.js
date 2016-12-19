@@ -38,9 +38,8 @@ $(function(){
 	$(".foot-right").on("click",function(){
 		$(".hui-img").addClass("kapai");
 		setTimeout(function(){
-			console.log(num)
 			changeQus();
-		},1000)
+		},500)
 		num++;
 		num>=queArr.length? num =0:num=num;
 	})

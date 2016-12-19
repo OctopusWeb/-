@@ -62,6 +62,7 @@ $(function(){
 	})
 	
 	pageContorller.changeQus = function(){
+		$(".hui-btn").removeClass("selectedBtn");
 		var ansArr1=[];
 		qusNum++;
 		$(".foot-num").html(qusNum+"/15");
@@ -73,10 +74,11 @@ $(function(){
 			qusArr.splice(mathDom,1);
 			ansArr.splice(mathDom,1);
 			$(".hui-btn").on("click",function(){
+				$(this).addClass("selectedBtn");
 				$(".hui-img").removeClass("kapai");
 				pageContorller.selectQus($(this).attr("id"),ansArr1);
 			})
-		},1000)
+		},500)
 		
 		$(".foot-right").off("click");
 	}
@@ -107,5 +109,22 @@ $(function(){
 		index+="<li></li>"
 		$(".score ul").html(index);
 	}
-	$(".foot-right").trigger("click")
+	init()
+	function init(){
+		var ansArr1=[];
+		qusNum++;
+		$(".foot-num").html(qusNum+"/15");
+		var mathDom = parseInt(Math.random()*qusArr.length);
+		$(".hui-group").html(qusArr[mathDom]);
+		ansArr1.push(qusArr[mathDom],ansArr[mathDom])
+		qusArr.splice(mathDom,1);
+		ansArr.splice(mathDom,1);
+		$(".hui-btn").on("click",function(){
+			$(this).addClass("selectedBtn");
+			$(".hui-img").removeClass("kapai");
+			pageContorller.selectQus($(this).attr("id"),ansArr1);
+		})
+		
+		$(".foot-right").off("click");
+	}
 })

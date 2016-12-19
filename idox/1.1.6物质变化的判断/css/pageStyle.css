@@ -28,11 +28,13 @@ border-radius: 0.1rem;margin-right: 3rem;margin-top: 0.8rem;}
 font-size:0.2rem;text-align: center;}
 
 .kapai{
-animation:myfirst 2s;
+animation:myfirst 1s;
 animation-direction:normal;
+animation-timing-function:linear;
 }	
 @keyframes myfirst
 {
-from {transform: rotateY(0deg);}
-to {transform: rotateY(360deg);}
+0% {transform: rotateY(0deg);}
+50% {transform: rotateY(90deg);}
+100% {transform: rotateY(0deg);}
 }

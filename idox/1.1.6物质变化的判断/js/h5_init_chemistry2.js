@@ -27,14 +27,7 @@
  * --其他--
  * 视具体情况而定
  */
-var myPublicFiles = ["js/jquery.min.js",
-					 "css/preload.min.css", 
-					 "js/preload.min.js",
-					 "js/easeljs-0.8.1.min.js",
-					 "js/preloadjs-0.6.1.min.js",
-					 "js/tweenjs-0.6.1.min.js",
-				  	 "js/movieclip-0.8.1.min.js",
-				 	 "js/animaCreateJs.js"
+var myPublicFiles = ["js/jquery.min.js"
 					];
 /**
  * 学科(初化，高化)通用文件
@@ -45,8 +38,7 @@ var myPublicFiles = ["js/jquery.min.js",
 
 
 var myCommonFiles = ["css/chemistry2.css", 
-					 "js/chemistry2.js",
-					 "anima/animaCreateJsContrl.js"
+					 "js/chemistry2.js"
 					];
 
 /**

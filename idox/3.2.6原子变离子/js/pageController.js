@@ -1,8 +1,7 @@
 $(function(){
-	var qusName1=["香水挥发","冰川在融化","玻璃破碎","菠萝榨汁","干冰升华","酒杯破碎","铁丝弯折","湿衣晾干","石头的粉碎","水沸腾"]
-	var qusName2=["钢铁生锈","菜刀生锈","蜡烛燃烧","蜡烛的融化","煤炭燃烧","面包发霉","青铜器生锈","蔬菜腐烂","水果腐烂","纸张燃烧"]
-	var qusArr1 = ["w0.png","w1.png","w2.png","w3.png","w4.png","w5.png","w6.png","w7.png","w8.png","w9.png"];
-	var qusArr2 = ["h0.png","h1.png","h2.png","h3.png","h4.png","h5.png","h6.png","h7.png","h8.png","h9.png"];
+	var qusName1=[["Na","+","B"],["Mg","2+","B"],["Al","3+","B"],["Cl","-","A"],["K","+","B"]
+				,["Ca","2+","B"],["Zn","2+","B"],["Ag","+","B"],["S","2-","A"],["Na","+","B"]
+	]
 	var type;
 	var socal=0;
 	var qusNum=0;
@@ -14,68 +13,63 @@ $(function(){
 	$("#reset").on("click",function(){
 		$(".hui-last").hide();
 		$(".hui-img").show();
-		$(".hui-btngroup").show();
 		$(".hui-foot").show();
-		qusArr1 = ["w0.png","w1.png","w2.png","w3.png","w4.png","w5.png","w6.png","w7.png","w8.png","w9.png"];
-		qusArr2 = ["h0.png","h1.png","h2.png","h3.png","h4.png","h5.png","h6.png","h7.png","h8.png","h9.png"];
-		var qusName1=["香水挥发","冰川在融化","玻璃破碎","菠萝榨汁","干冰升华","酒杯破碎","铁丝弯折","湿衣晾干","石头的粉碎","水沸腾"]
-		var qusName2=["钢铁生锈","菜刀生锈","蜡烛燃烧","蜡烛的融化","煤炭燃烧","面包发霉","青铜器生锈","蔬菜腐烂","水果腐烂","纸张燃烧"]
 		socal=0;
 		qusNum=0;
 		$(".foot-center-box").css({"width":0+"%"});
 		$(".foot-num").html(0+"/10");
 		$(".foot-left-num1").html(0);
 		pageContorller.changeQus()
-		
 	})
+	
+	
 	
 	pageContorller.changeQus = function(){
 		qusNum++;
 		$(".foot-num").html(qusNum+"/10");
-		$(".hui-btn").removeClass("green-btn");
-		$(".hui-btn").removeClass("red-btn");
 		$(".hide").hide();
 		$(".hui-img").addClass("kapai");
-		if(Math.random()>0.5){
-			type= "w";
-			var num = parseInt(Math.random()*qusArr1.length);
-			setTimeout(function(){
-				$(".hui-img .imgs").attr({"src":"img/"+qusArr1[num]});
-				$(".title").html(qusName1[num])
-			},1000)
+		
+		var arr = qusName1[qusNum-1];
+		setTimeout(function(){
+			$(".chooseBox h4").removeClass("selected");
+			$(".hui-img h1").eq(0).html(arr[0])
+			$(".hui-box h3").eq(0).html(arr[0])
+			$(".hui-box h3").eq(1).html(arr[0]+"<p>"+arr[1]+"</p>");
+			$(".hui-box h3").eq(1).css({"text-indent":"-999rem"})
 			
-			qusArr1.splice(num,1);
-			qusName1.splice(num,1)
-		}else{
-			type="h";
-			var num = parseInt(Math.random()*qusArr2.length);
-			setTimeout(function(){
-				$(".hui-img .imgs").attr({"src":"img/"+qusArr2[num]});
-				$(".title").html(qusName2[num])
-			},1000)
-			qusArr2.splice(num,1)
-			qusName2.splice(num,1)
-		}
+			$(".choose").hide();
+		},500);
+
 		$(".foot-right").off("click");
-		$(".hui-btn").on("click",function(){
+		$(".chooseBox h4").on("click",function(){
 			$(".hui-img").removeClass("kapai");
-			pageContorller.selectQus($(this).attr("id"));
+			$(this).parent().find("h4").removeClass("selected")
+			$(this).addClass("selected");
+			if($(".selected").length==3){
+				var a = $(".selected").eq(0).attr("id");
+				var b = $(".selected").eq(1).attr("id");
+				var c = $(".selected").eq(2).attr("id");
+				type = a+b+c;
+				$(".hui-box h3").eq(1).css({"text-indent":"0rem"})
+				pageContorller.selectQus(arr[2],type)
+			}
 		})
 	}
-	pageContorller.selectQus = function(types){
-		types == "w"?btn=0:btn=1;
+	pageContorller.selectQus = function(types,type){
+		
+		types == "A"?types="034":types="125";
+		console.log(types+""+type)
 		if(types == type){
 			socal+=10;
 			$(".foot-left-num1").html(socal);
 			$(".foot-center-box").css({"width":socal+"%"});
-			$(".hui-btn").eq(btn).addClass("green-btn");
 			$(".right").show();
 		}else{
-			$(".hui-btn").eq(btn).addClass("red-btn");
 			$(".wrong").show();
 		}
 		if(qusNum==10){pageContorller.socalShow()}
-		$(".hui-btn").off("click");
+		$(".chooseBox h4").off("click")
 		$(".foot-right").on("click",function(){
 			pageContorller.changeQus();
 		})
@@ -88,5 +82,32 @@ $(function(){
 		$(".hui-btngroup").hide();
 		$(".hui-foot").hide();
 	}
-	$(".foot-right").trigger("click")
+	init();
+	function init(){
+		qusNum++;
+		$(".foot-num").html(qusNum+"/10");
+		$(".hide").hide();		
+		var arr = qusName1[qusNum-1];
+		$(".chooseBox h4").removeClass("selected");
+		$(".hui-img h1").eq(0).html(arr[0])
+		$(".hui-box h3").eq(0).html(arr[0])
+		$(".hui-box h3").eq(1).html(arr[0]+"<p>"+arr[1]+"</p>");
+		$(".hui-box h3").eq(1).css({"text-indent":"-999rem"})
+		$(".hui-img").removeClass("kapai");
+		$(".choose").hide();
+
+		$(".foot-right").off("click");
+		$(".chooseBox h4").on("click",function(){
+			$(this).parent().find("h4").removeClass("selected")
+			$(this).addClass("selected");
+			if($(".selected").length==3){
+				var a = $(".selected").eq(0).attr("id");
+				var b = $(".selected").eq(1).attr("id");
+				var c = $(".selected").eq(2).attr("id");
+				type = a+b+c;
+				$(".hui-box h3").eq(1).css({"text-indent":"0rem"})
+				pageContorller.selectQus(arr[2],type)
+			}
+		})
+	}
 })
