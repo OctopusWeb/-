@@ -1,0 +1,38 @@
+.hui-img{border: 0.01rem #fff solid;border-radius: 0.05rem;width: 5.20rem;height: 3rem;margin: 0 auto;overflow: hidden;position: relative;}
+.hui-img .imgs{width: 100%;}
+.hui-btngroup{width: 5.20rem;margin: 0 auto;height: 1.22rem;}
+.hui-btn,.hui-btn1{height: 0.48rem;width: 1.53rem;background: linear-gradient(#1b7ade,#0545a7);font-size: 0.24rem;border: 0.01rem #35e4ff solid;
+border-radius: 0.04rem;text-align: center;display: inline-block;margin-left: 0.55rem;margin-top: 0.3rem;cursor: pointer;}
+.hui-btn1{margin-left: -0.8rem;margin-top: 3rem;}
+.hui-btn:first-child{margin-left: 0.78rem;}
+.hui-btn:active{opacity: 0.7;}
+.green-btn{background: linear-gradient(#2ad105,#069b03);}
+.red-btn{background: linear-gradient(#e23140,#fc5157);}
+.hui-foot{width: 100%;height: 1.84rem;bottom: 0;border-top:0.02rem solid #074288;}
+.foot-left{display: inline-block;margin-left: 0.84rem;margin-top: 0.6rem;float: left;}
+.foot-left-num1{font-size: 0.48rem;display: inline-block;}
+.foot-left-num2{font-size: 0.26rem;display: inline-block;}
+.foot-center{margin-left: 2rem;margin-right: 0;height: 0.1rem;background: #0053b9;border: 0.01rem solid #009fff;
+border-radius: 0.1rem;margin-right: 3rem;margin-top: 0.8rem;}
+.foot-right{display: inline-block;width: 1.78rem;position: relative;height: 1rem;float: right;margin-top: 0.3rem;cursor: pointer;}
+.foot-right img{position: absolute;height: 100%;}
+.foot-num{display: inline-block;float: right;width: 0.9rem;margin-top: 0.7rem;}
+.foot-center-box{width: 0%;background: #0067e6;border-radius: 0.1rem;height: 0.09rem;border: 0.01rem #fff solid;}
+.hide{display: none;position: absolute;left: 0;top: 0;z-index: 1;width: 1.5rem;text-align: center;margin-top: 0.7rem;margin-left: 1.8rem;}
+.hui-last{width: 6.2rem;height: 4.6rem;margin: 0 auto;margin-top: 0.46rem;display: none;}
+.hui-last .score1{float: left;height: 3rem;width: 1.2rem;margin-left: 1.0rem;}
+.hui-last .score1 img{height: 100%;}
+.hui-last .score2{float: left;height: 3rem;width: 1.2rem;margin-left: -0.4rem;}
+.hui-last .score2 img{height: 100%;}
+.title{position: absolute;width: 100%;height: 0.5rem;background: rgba(0,0,0,0.5);bottom: 0;color: #fff;
+font-size:0.2rem;text-align: center;}
+
+.kapai{
+animation:myfirst 2s;
+animation-direction:normal;
+}	
+@keyframes myfirst
+{
+from {transform: rotateY(0deg);}
+to {transform: rotateY(360deg);}
+}
