@@ -28,7 +28,7 @@ border-radius: 0.1rem;margin-right: 3rem;margin-top: 0.8rem;}
 .title{position: absolute;width: 100%;height: 0.5rem;background: rgba(0,0,0,0.5);bottom: 0;color: #fff;
 font-size:0.2rem;text-align: center;}
 
-.hui-group{position: relative;left: 35%;top: 35%;}
+.hui-group{position: relative;left: 3.1rem;top: 35%;}
 .hui-group span{position: absolute;left: 0;font-size: 0.3rem;top: -0.3rem;left: 50%;cursor: pointer;
 display: inline-block;width: 0.3rem;height: 0.3rem;margin-top: 0;line-height: 0.3rem;}
 .hui-group .span{background: url(../img/span.png) no-repeat;background-size: 0.3rem 0.3rem;text-indent: -999rem;}
@@ -36,6 +36,9 @@ display: inline-block;width: 0.3rem;height: 0.3rem;margin-top: 0;line-height: 0.
 .hui-group h2{color: #fff;font-size: 1.1rem;float: left;line-height: 1.1rem;position: relative;}
 .hui-group h3{color: #fff;font-size: 0.42rem;float: left;line-height: 1.5rem;position: relative;}
 .hui-group .blue{color: #00f6ff;}
+.fixBtn{position: absolute;width: 60%;text-align: center;background: #000;top: 50%;background: rgba(0,0,0,0.7);height: 2rem;margin-top: -1rem;
+margin-left: 20%;z-index: 100;border-radius: 0.2rem;display: none;}
+.fixBtn h1{font-size: 0.3rem;line-height: 2rem;}
 
 .kapai{
 animation:myfirst 1s;

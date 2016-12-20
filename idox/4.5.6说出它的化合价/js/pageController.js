@@ -1,24 +1,38 @@
 $(function(){
 	var qusArr = [
-		'<h1>K</h1><h1 class="blue">Mn</h1><h2>1</h2>',
-		'<h1>K</h1><h1 class="blue">Mn</h1><h2>2</h2>',
-		'<h1>K</h1><h1 class="blue">Mn</h1><h2>3</h2>',
-		'<h1>K</h1><h1 class="blue">Mn</h1><h2>4</h2>',
-		'<h1>K</h1><h1 class="blue">Mn</h1><h2>5</h2>',
-		'<h1>K</h1><h1 class="blue">Mn</h1><h2>6</h2>',
-		'<h1>K</h1><h1 class="blue">Mn</h1><h2>7</h2>',
-		'<h1>K</h1><h1 class="blue">Mn</h1><h2>8</h2>',
-		'<h1>K</h1><h1 class="blue">Mn</h1><h2>9</h2>',
-		'<h1>K</h1><h1 class="blue">Mn</h1><h2>10</h2>',
-		'<h1>K</h1><h1 class="blue">Mn</h1><h2>11</h2>',
-		'<h1>K</h1><h1 class="blue">Mn</h1><h2>12</h2>',
-		'<h1>K</h1><h1 class="blue">Mn</h1><h2>13</h2>',
-		'<h1>K</h1><h1 class="blue">Mn</h1><h2>14</h2>',
-		'<h1>K</h1><h1 class="blue">Mn</h1><h2>15</h2>'
+		'<h1 class="blue">Cl</h1><h1>O</h1><h2>2</h2>',
+		'<h1 class="blue">C</h1><h1>O</h1><h2>2</h2>',
+		'<h1 class="blue">Fe</h1><h1>O</h1>',
+		'<h1 class="blue">Fe</h1><h1>(OH)</h1><h2>3</h2>',
+		'<h1 class="blue">Fe</h1><h2>2</h2><h1>O</h1><h2>3</h2>',
+		'<h1 class="blue">S</h1><h1>O</h1><h2>2</h2>',
+		'<h1>H</h1><h1 class="blue">N</h1><h1>O</h1><h2>3</h2>',
+		'<h1 class="blue">Si</h1><h1>O</h1><h2>2</h2>',
+		'<h1></h1><h1 class="blue">O</h1><h2>2</h2>',
+		'<h1 class="blue">N</h1><h1>H</h1><h2>3</h2>',
+		
+		'<h1>Na</h1><h1 class="blue">Cl</h1>',
+		'<h1>Na</h1><h1 class="blue">N</h1><h1>O</h1><h2>2</h2>',
+		'<h1 class="blue">Na</h1><h1>Cl</h1>',
+		'<h1>Na</h1><h2>2</h2>2<h1 class="blue">S</h1><h1>O</h1><h2>4</h2>',
+		'<h1>Na</h1><h2>2</h2><h1 class="blue">S</h1><h1>O</h1><h2>3</h2>',
+		
+		'<h1>Na</h1><h2>2</h2><h1 class="blue">Si</h1><h1>O</h1><h2>3</h2>',
+		'<h1>Na</h1><h2>2</h2><h1>H</h1><h1 class="blue">C</h1><h1>O</h1><h2>3</h2>',
+		'<h1>Na</h1><h2>2</h2><h1 class="blue">C</h1><h1>O</h1><h2>3</h2>',
+		'<h1 class="blue">Mn</h1><h1>CO</h1><h2>3</h2>',
+		'<h1>K</h1><h1 class="blue">Mn</h1><h1>O</h1><h2>4</h2>',
+		
+		'<h1>K</h1><h1 class="blue">Cl</h1><h1>O</h1><h2>3</h2>',
+		'<h1>K</h1><h2>2</h2><h1 class="blue">Mn</h1><h1>O</h1><h2>4</h2>',
+		'<h1>H</h1><h1 class="blue">Cl</h1><h1>O</h1><h2>4</h2>',
+		'<h1>H</h1><h1 class="blue">Cl</h1><h1>O</h1>',
+		'<h1>H</h1><h2>3</h2><h1 class="blue">B</h1><h1>O</h1><h2>3</h2>',
+		'<h1>H</h1><h2>2</h2><h1 class="blue">O</h1>'
 	]
 	
 	var ansArr = [
-		"+2","+2","+2","+2","+2","+2","+2","+2","+2","+2","+2","+2","+2","+2","+2"
+		"+4","+4","+2","+3","+3","+4","+5","+4","0","-3","+1","+3","+1","+6","+4","+4","+4","+4","+2","+7","+5","+6","+7","+1","+3","-2"
 	]
 	var result=[];
 	var socal=0;
@@ -32,25 +46,39 @@ $(function(){
 		$(".hui-last").hide();
 		$(".hui-img,.hui-title,.hui-btngroup,.hui-foot").show();
 		qusArr = [
-			'<h1>K</h1><h1 class="blue">Mn</h1><h2>1</h2>',
-			'<h1>K</h1><h1 class="blue">Mn</h1><h2>2</h2>',
-			'<h1>K</h1><h1 class="blue">Mn</h1><h2>3</h2>',
-			'<h1>K</h1><h1 class="blue">Mn</h1><h2>4</h2>',
-			'<h1>K</h1><h1 class="blue">Mn</h1><h2>5</h2>',
-			'<h1>K</h1><h1 class="blue">Mn</h1><h2>6</h2>',
-			'<h1>K</h1><h1 class="blue">Mn</h1><h2>7</h2>',
-			'<h1>K</h1><h1 class="blue">Mn</h1><h2>8</h2>',
-			'<h1>K</h1><h1 class="blue">Mn</h1><h2>9</h2>',
-			'<h1>K</h1><h1 class="blue">Mn</h1><h2>10</h2>',
-			'<h1>K</h1><h1 class="blue">Mn</h1><h2>11</h2>',
-			'<h1>K</h1><h1 class="blue">Mn</h1><h2>12</h2>',
-			'<h1>K</h1><h1 class="blue">Mn</h1><h2>13</h2>',
-			'<h1>K</h1><h1 class="blue">Mn</h1><h2>14</h2>',
-			'<h1>K</h1><h1 class="blue">Mn</h1><h2>15</h2>'
+			'<h1 class="blue">Cl</h1><h1>O</h1><h2>2</h2>',
+			'<h1 class="blue">C</h1><h1>O</h1><h2>2</h2>',
+			'<h1 class="blue">Fe</h1><h1>O</h1>',
+			'<h1 class="blue">Fe</h1><h1>(OH)</h1><h2>3</h2>',
+			'<h1 class="blue">Fe</h1><h2>2</h2><h1>O</h1><h2>3</h2>',
+			'<h1 class="blue">S</h1><h1>O</h1><h2>2</h2>',
+			'<h1>H</h1><h1 class="blue">N</h1><h1>O</h1><h2>3</h2>',
+			'<h1 class="blue">Si</h1><h1>O</h1><h2>2</h2>',
+			'<h1></h1><h1 class="blue">O</h1><h2>2</h2>',
+			'<h1 class="blue">N</h1><h1>H</h1><h2>3</h2>',
+			
+			'<h1>Na</h1><h1 class="blue">Cl</h1>',
+			'<h1>Na</h1><h1 class="blue">N</h1><h1>O</h1><h2>2</h2>',
+			'<h1 class="blue">Na</h1><h1>Cl</h1>',
+			'<h1>Na</h1><h2>2</h2>2<h1 class="blue">S</h1><h1>O</h1><h2>4</h2>',
+			'<h1>Na</h1><h2>2</h2><h1 class="blue">S</h1><h1>O</h1><h2>3</h2>',
+			
+			'<h1>Na</h1><h2>2</h2><h1 class="blue">Si</h1><h1>O</h1><h2>3</h2>',
+			'<h1>Na</h1><h2>2</h2><h1>H</h1><h1 class="blue">C</h1><h1>O</h1><h2>3</h2>',
+			'<h1>Na</h1><h2>2</h2><h1 class="blue">C</h1><h1>O</h1><h2>3</h2>',
+			'<h1 class="blue">Mn</h1><h1>CO</h1><h2>3</h2>',
+			'<h1>K</h1><h1 class="blue">Mn</h1><h1>O</h1><h2>4</h2>',
+			
+			'<h1>K</h1><h1 class="blue">Cl</h1><h1>O</h1><h2>3</h2>',
+			'<h1>K</h1><h2>2</h2><h1 class="blue">Mn</h1><h1>O</h1><h2>4</h2>',
+			'<h1>H</h1><h1 class="blue">Cl</h1><h1>O</h1><h2>4</h2>',
+			'<h1>H</h1><h1 class="blue">Cl</h1><h1>O</h1>',
+			'<h1>H</h1><h2>3</h2><h1 class="blue">B</h1><h1>O</h1><h2>3</h2>',
+			'<h1>H</h1><h2>2</h2><h1 class="blue">O</h1>'
 		]
 		
 		ansArr = [
-			"+2","+2","+2","+2","+2","+2","+2","+2","+2","+2","+2","+2","+2","+2","+2"
+			"+4","+4","+2","+3","+3","+4","+5","+4","0","-3","+1","+3","+1","+6","+4","+4","+4","+4","+2","+7","+5","+6","+7","+1","+3","-2"
 		]
 		result=[];
 		socal=0;

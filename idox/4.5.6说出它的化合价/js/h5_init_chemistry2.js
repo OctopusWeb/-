@@ -27,7 +27,9 @@
  * --其他--
  * 视具体情况而定
  */
-var myPublicFiles = ["js/jquery.min.js"
+var myPublicFiles = ["js/jquery.min.js",
+					 "css/preload.min.css", 
+					 "js/preload.min.js"
 					];
 /**
  * 学科(初化，高化)通用文件

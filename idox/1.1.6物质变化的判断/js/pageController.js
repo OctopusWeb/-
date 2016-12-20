@@ -1,8 +1,8 @@
 $(function(){
-	var qusName1=["香水挥发","冰川在融化","玻璃破碎","菠萝榨汁","干冰升华","酒杯破碎","铁丝弯折","湿衣晾干","石头的粉碎","水沸腾"]
-	var qusName2=["钢铁生锈","菜刀生锈","蜡烛燃烧","蜡烛的融化","煤炭燃烧","面包发霉","青铜器生锈","蔬菜腐烂","水果腐烂","纸张燃烧"]
-	var qusArr1 = ["w0.png","w1.png","w2.png","w3.png","w4.png","w5.png","w6.png","w7.png","w8.png","w9.png"];
-	var qusArr2 = ["h0.png","h1.png","h2.png","h3.png","h4.png","h5.png","h6.png","h7.png","h8.png","h9.png"];
+	var qusName1=["香水挥发","冰川在融化","玻璃破碎","菠萝榨汁","干冰升华","酒杯破碎","铁丝弯折","湿衣晾干","石头的粉碎","水沸腾","蜡烛的融化"]
+	var qusName2=["钢铁生锈","菜刀生锈","蜡烛燃烧","煤炭燃烧","面包发霉","青铜器生锈","蔬菜腐烂","水果腐烂","纸张燃烧"]
+	var qusArr1 = ["w0.png","w1.png","w2.png","w3.png","w4.png","w5.png","w6.png","w7.png","w8.png","w9.png","w10.png"];
+	var qusArr2 = ["h0.png","h1.png","h2.png","h4.png","h5.png","h6.png","h7.png","h8.png","h9.png"];
 	var type;
 	var socal=0;
 	var qusNum=0;
@@ -16,10 +16,10 @@ $(function(){
 		$(".hui-img").show();
 		$(".hui-btngroup").show();
 		$(".hui-foot").show();
-		qusArr1 = ["w0.png","w1.png","w2.png","w3.png","w4.png","w5.png","w6.png","w7.png","w8.png","w9.png"];
-		qusArr2 = ["h0.png","h1.png","h2.png","h3.png","h4.png","h5.png","h6.png","h7.png","h8.png","h9.png"];
-		qusName1=["香水挥发","冰川在融化","玻璃破碎","菠萝榨汁","干冰升华","酒杯破碎","铁丝弯折","湿衣晾干","石头的粉碎","水沸腾"]
-		qusName2=["钢铁生锈","菜刀生锈","蜡烛燃烧","蜡烛的融化","煤炭燃烧","面包发霉","青铜器生锈","蔬菜腐烂","水果腐烂","纸张燃烧"]
+		qusArr1 = ["w0.png","w1.png","w2.png","w3.png","w4.png","w5.png","w6.png","w7.png","w8.png","w9.png","w10.png"];
+		qusArr2 = ["h0.png","h1.png","h2.png","h4.png","h5.png","h6.png","h7.png","h8.png","h9.png"];
+		qusName1=["香水挥发","冰川在融化","玻璃破碎","菠萝榨汁","干冰升华","酒杯破碎","铁丝弯折","湿衣晾干","石头的粉碎","水沸腾","蜡烛的融化"]
+		qusName2=["钢铁生锈","菜刀生锈","蜡烛燃烧","煤炭燃烧","面包发霉","青铜器生锈","蔬菜腐烂","水果腐烂","纸张燃烧"]
 		socal=0;
 		qusNum=0;
 		$(".foot-center-box").css({"width":0+"%"});

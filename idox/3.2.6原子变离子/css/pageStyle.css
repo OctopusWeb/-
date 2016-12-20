@@ -31,10 +31,10 @@ font-size:0.2rem;text-align: center;}
 .hui-img h1{width: 100%;text-align: center;font-size: 0.48rem;}
 .hui-box{width: 100%;margin-top: 0.5rem;}
 .hui-box h2,.hui-box h3,.hui-box h4,.hui-box img{float: left;font-size: 0.30rem;font-weight: 400;margin-left: 0.1rem;}
-.hui-box h3{line-height: 0.5rem;width: 0.8rem;border: 1px #00ffff solid;text-align: center;
+.hui-box h3{line-height: 0.5rem;width: 0.8rem;border: 1px #0c619c solid;text-align: center;
 margin-top: 0.5rem;margin-right: 0.3rem;position: relative;overflow: hidden;}
 .hui-box h3 p{font-size: 0.2rem;display: inline-block;margin-top: -0.1rem;position: absolute;}
-.hui-box img{height: 0.2rem;margin-top: 0.65rem;}
+.hui-box img{height: 0.1rem;margin-top: 0.7rem;}
 .hui-box .chooseBox{width: 0.8rem;height: 1.5rem;float: left;margin-right: 0.1rem}
 .hui-box .chooseBox h4{width: 100%;text-align: center;line-height: 0.75rem;border: 1px #0c619c solid;cursor: pointer;}
 .hui-box .chooseBox .selected{background: #132a69;}
