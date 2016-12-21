@@ -47,11 +47,18 @@ $(function(){
 		num++;
 		if(num>=queArr.length){
 			num =0;
-			$(".fixBtn").fadeIn();
-			setTimeout(function(){
-				$(".fixBtn").fadeOut()
-			},1000);
+			$(".hui-last").show();
+			$(".hui-img").hide();
+			$(".hui-btngroup").hide();
+			$(".hui-foot").hide();
+			
 		}
+	})
+	$(".hui-btn1").on("click",function(){
+		$(".hui-last").hide();
+		$(".hui-img").show();
+		$(".hui-btngroup").show();
+		$(".hui-foot").show();
 	})
 	$(".span").on("click",function(){
 		$(this).toggleClass("span")

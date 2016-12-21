@@ -22,7 +22,20 @@ $(function(){
 		$(".foot-center-box").css({"width":0+"%"});
 		$(".foot-num").html(0+"/10");
 		$(".foot-left-num1").html(0);
-		pageContorller.changeQus()
+		qusNum++;
+		$(".foot-num").html(qusNum+"/10");
+		$(".hui-btn").removeClass("green-btn");
+		$(".hui-btn").removeClass("red-btn");
+		$(".hide").hide();
+		$(".hui-img").addClass("kapai");
+		var num = parseInt(Math.random()*(qusArr1.length-1));
+		type=qusArr1[num].substr(0,1);
+		setTimeout(function(){
+			$(".hui-img .imgs").attr({"src":"img/"+qusArr1[num]});
+			$(".title").html(qusName1[num]);
+			qusArr1.splice(num,1);
+			qusName1.splice(num,1)
+		},100)
 		
 	})
 	
@@ -61,19 +74,26 @@ $(function(){
 			$(".hui-btn").eq(btn).addClass("red-btn");
 			$(".wrong").show();
 		}
-		if(qusNum==10){pageContorller.socalShow()}
-		$(".hui-btn").off("click");
-		$(".foot-right").on("click",function(){
-			pageContorller.changeQus();
-		})
+		if(qusNum==10){
+			pageContorller.socalShow();
+		}else{
+			$(".hui-btn").off("click");
+			$(".foot-right").on("click",function(){
+				pageContorller.changeQus();
+			})
+		}
+		
 	}
 	pageContorller.socalShow = function(){
-		var socal1 = socal/10;
-		$(".score1 img").attr({"src":"img/"+socal1+"_.png"})
-		$(".hui-last").show();
-		$(".hui-img").hide();
-		$(".hui-btngroup").hide();
-		$(".hui-foot").hide();
+		setTimeout(function(){
+			var socal1 = socal/10;
+			$(".score1 img").attr({"src":"img/"+socal1+"_.png"})
+			$(".hui-last").show();
+			$(".hui-img").hide();
+			$(".hui-btngroup").hide();
+			$(".hui-foot").hide();
+		},2000)
+		
 	}
 	init();
 	function init(){

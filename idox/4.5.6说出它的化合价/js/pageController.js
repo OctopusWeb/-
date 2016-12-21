@@ -85,7 +85,12 @@ $(function(){
 		qusNum=0;
 		$(".foot-center-box").css({"width":0+"%"});
 		$(".foot-num").html(0+"/15");
-		pageContorller.changeQus();
+		$(".hui-btn").removeClass("selectedBtn");
+		var ansArr1=[];
+		qusNum++;
+		$(".foot-num").html(qusNum+"/15");
+		$(".hui-img").addClass("kapai");
+		var mathDom = parseInt(Math.random()*qusArr.length);
 		
 	})
 	
@@ -115,27 +120,34 @@ $(function(){
 		result.push(arr);
 		socal+=6.666;
 		$(".foot-center-box").css({"width":socal+"%"});
-		if(qusNum==15){pageContorller.socalShow()}
-		$(".hui-btn").off("click");
-		$(".foot-right").on("click",function(){
-			pageContorller.changeQus();
-		})
+		if(qusNum==15){
+			pageContorller.socalShow()
+		}else{
+			$(".hui-btn").off("click");
+			$(".foot-right").on("click",function(){
+				pageContorller.changeQus();
+			})
+		}
+		
 	}
 	pageContorller.socalShow = function(){
-		$(".hui-last").show();
-		$(".hui-img,.hui-title,.hui-btngroup,.hui-foot").hide();
-		var index="";
-		for(var i=0;i<result.length;i++){
-			(i-3)%4==0?cla = "class = 'rightBorder'" : cla=""
-			i> 11 ?cla = "class = 'bottomBorder'" : cla=cla
-			if(result[i][1] == result[i][2]){
-				index+="<li "+cla+"><p>"+result[i][1]+"</p><div class='scoreGroup'>"+result[i][0]+"</div></li>"
-			}else{
-				index+="<li "+cla+"><p>"+result[i][1]+"</p><div class='scoreGroup wrong'>"+result[i][0]+"</div><img src='img/wrong_img.svg'/></li>"
+		setTimeout(function(){
+			$(".hui-last").show();
+			$(".hui-img,.hui-title,.hui-btngroup,.hui-foot").hide();
+			var index="";
+			for(var i=0;i<result.length;i++){
+				(i-3)%4==0?cla = "class = 'rightBorder'" : cla=""
+				i> 11 ?cla = "class = 'bottomBorder'" : cla=cla
+				if(result[i][1] == result[i][2]){
+					index+="<li "+cla+"><p>"+result[i][1]+"</p><div class='scoreGroup'>"+result[i][0]+"</div></li>"
+				}else{
+					index+="<li "+cla+"><p>"+result[i][1]+"</p><div class='scoreGroup wrong'>"+result[i][0]+"</div><img src='img/wrong_img.svg'/></li>"
+				}
 			}
-		}
-		index+="<li></li>"
-		$(".score ul").html(index);
+			index+="<li></li>"
+			$(".score ul").html(index);
+		},2000)
+		
 	}
 	init()
 	function init(){

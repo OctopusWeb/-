@@ -1,3 +1,4 @@
+#content{margin-bottom: 2rem;}
 .hui-img{border: 0.01rem #fff solid;border-radius: 0.05rem;width: 5.20rem;height: 3rem;margin: 0 auto;overflow: hidden;position: relative;}
 .hui-img .imgs{width: 100%;}
 .hui-btngroup{width: 5.20rem;margin: 0 auto;height: 1.22rem;}
@@ -8,7 +9,7 @@ border-radius: 0.04rem;text-align: center;display: inline-block;margin-left: 0.5
 .hui-btn:active{opacity: 0.7;}
 .green-btn{background: linear-gradient(#2ad105,#069b03);}
 .red-btn{background: linear-gradient(#e23140,#fc5157);}
-.hui-foot{width: 100%;height: 1.84rem;bottom: 0;border-top:0.02rem solid #074288;}
+.hui-foot{width: 100%;height: 1.84rem;bottom: 0;border-top:0.02rem solid #074288;position: absolute;}
 .foot-left{display: inline-block;margin-left: 0.84rem;margin-top: 0.6rem;float: left;}
 .foot-left-num1{font-size: 0.48rem;display: inline-block;}
 .foot-left-num2{font-size: 0.26rem;display: inline-block;}
