@@ -28,7 +28,7 @@ font-size:0.2rem;text-align: center;}
 
 .hui-group{position: relative;left: 3.1rem;top: 35%;}
 .hui-group span{position: absolute;left: 0;font-size: 0.3rem;top: -0.3rem;left: 50%;cursor: pointer;
-display: inline-block;width: 0.3rem;height: 0.3rem;margin-top: 0;line-height: 0.3rem;}
+width: 0.3rem;height: 0.3rem;margin-top: 0;line-height: 0.3rem;display: block;}
 .hui-group .span{background: url(../img/span.png) no-repeat;background-size: 0.3rem 0.3rem;text-indent: -999rem;}
 .hui-group h1{color: #fff;font-size: 1.1rem;float: left;line-height: 1.1rem;position: relative;}
 .hui-group h2{color: #fff;font-size: 1.1rem;float: left;line-height: 1.1rem;position: relative;}

@@ -1,5 +1,5 @@
 #content{margin-bottom: 2rem;}
-.hui-img{border-radius: 0.05rem;width: 5.20rem;height: 3rem;margin: 0 auto;overflow: hidden;position: relative;}
+.hui-img{border-radius: 0.05rem;width: 6rem;height: 3rem;margin: 0 auto;overflow: hidden;position: relative;}
 .hui-img .imgs{width: 100%;}
 .hui-btngroup{margin: 0 auto;}
 .hui-btn,.hui-btn1{height: 0.48rem;width: 0.47rem;background: linear-gradient(#1b7ade,#0545a7);font-size: 0.24rem;border: 0.01rem #35e4ff solid;
@@ -23,19 +23,20 @@ border-radius: 0.1rem;margin-right: 3rem;margin-top: 0.8rem;}
 .title{position: absolute;width: 100%;height: 0.5rem;background: rgba(0,0,0,0.5);bottom: 0;color: #fff;
 font-size:0.2rem;text-align: center;}
 .hui-group{margin-left: 25%;margin-top: 1.4rem;}
-.hui-group h1{color: #fff;font-size: 1.1rem;float: left;line-height: 1.1rem;position: relative;}
+.hui-group h1{color: #fff;font-size: 1rem;float: left;line-height: 1.1rem;position: relative;}
 .hui-group h2{color: #fff;font-size: 0.42rem;float: left;line-height: 1.5rem;position: relative;}
 .hui-group .blue{color: #ffd200;}
 .hui-title{width: 100%;text-align: center;font-size: 0.2rem;margin-top: -0.3rem;}
 #reset{width: 1.53rem;margin-left: 40%;margin-top: 0.2rem;}
 
-.score .scoreGroup{width: 100%;margin-left: 0.8rem;}
-.score ul li{width: 2.14rem;height: 1.16rem;border-bottom: 0.01rem solid #00ffc6;float: left;position: relative;
+.score .scoreGroup{width: 100%;margin-left: 0.8rem;margin-top: 0.5rem;}
+.score ul li{width: 2.12rem;height: 1.16rem;border-bottom: 0.01rem solid #00ffc6;float: left;position: relative;
 border-right: 0.01rem solid #00ffc6;text-align: center;}
 .score ul li h1{color: #fff;font-size: 0.3rem;float: left;line-height: 0.3rem;position: relative;}
+.hui-group  p{display: none;}
 .score ul li h2{color: #fff;font-size: 0.2rem;float: left;line-height: 0.4rem;position: relative;}
 .score ul li .blue{color: #ffd200;}
-.score ul li p{font-size: 0.24rem;width: 100%;text-align: center;margin-top: 0.1rem;display: inline-block;}
+.score ul li p{font-size: 0.24rem;position: absolute;top: -0.3rem;color: #fff !important;}
 .score ul li img{position: absolute;right: 0.1rem;bottom: 0.1rem;}
 .score ul li .wrong h1,.score ul li .wrong h2,.score ul li .wrong p,.score ul li .wrong .blue{color: #ff0012;}
 .score ul .rightBorder{border-right: none;}

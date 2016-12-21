@@ -210,8 +210,8 @@ footer.bottom-bar .bottom-bar-keyBox {
     background: rgba(0,0,0,0);
     height:1.84rem;
 }
-
-.hui-foot{width: 100%;height: 1.84rem;bottom: 0;border-top:0.02rem solid #074288;}
+#content{margin-bottom: 2rem;}
+.hui-foot{width: 100%;height: 1.84rem;bottom: 0;border-top:0.02rem solid #074288;position: absolute;}
 .foot-left{display: inline-block;margin-left: 0.84rem;margin-top: 0.6rem;float: left;}
 .foot-left-num1{font-size: 0.48rem;display: inline-block;}
 .foot-left-num2{font-size: 0.26rem;display: inline-block;}

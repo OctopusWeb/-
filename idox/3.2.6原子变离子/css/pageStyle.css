@@ -1,5 +1,5 @@
 #content{margin-bottom: 2rem;}
-.hui-img{border-radius: 0.05rem;width: 8.50rem;height: 3rem;margin: 0 auto;overflow: hidden;position: relative;}
+.hui-img{border-radius: 0.05rem;width: 8.50rem;height: 3rem;margin: 0 auto;overflow: hidden;position: relative;margin-top: 1rem;}
 .hui-img .imgs{width: 100%;}
 .hui-btngroup{width: 5.20rem;margin: 0 auto;height: 1.22rem;}
 .hui-btn,.hui-btn1{height: 0.48rem;width: 1.53rem;background: linear-gradient(#1b7ade,#0545a7);font-size: 0.24rem;border: 0.01rem #35e4ff solid;

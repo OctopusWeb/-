@@ -1,34 +1,34 @@
 $(function(){
 	var qusArr = [
-		'<h1 class="blue">Cl</h1><h1>O</h1><h2>2</h2>',
-		'<h1 class="blue">C</h1><h1>O</h1><h2>2</h2>',
-		'<h1 class="blue">Fe</h1><h1>O</h1>',
-		'<h1 class="blue">Fe</h1><h1>(OH)</h1><h2>3</h2>',
-		'<h1 class="blue">Fe</h1><h2>2</h2><h1>O</h1><h2>3</h2>',
-		'<h1 class="blue">S</h1><h1>O</h1><h2>2</h2>',
-		'<h1>H</h1><h1 class="blue">N</h1><h1>O</h1><h2>3</h2>',
-		'<h1 class="blue">Si</h1><h1>O</h1><h2>2</h2>',
-		'<h1></h1><h1 class="blue">O</h1><h2>2</h2>',
-		'<h1 class="blue">N</h1><h1>H</h1><h2>3</h2>',
+		'<h1 class="blue">Cl<p>+4</p></h1><h1>O</h1><h2>2</h2>',
+		'<h1 class="blue">C<p>+4</p></h1><h1>O</h1><h2>2</h2>',
+		'<h1 class="blue">Fe<p>+2</p></h1><h1>O</h1>',
+		'<h1 class="blue">Fe<p>+3</p></h1><h1>(OH)</h1><h2>3</h2>',
+		'<h1 class="blue">Fe<p>+3</p></h1><h2>2</h2><h1>O</h1><h2>3</h2>',
+		'<h1 class="blue">S<p>+4</p></h1><h1>O</h1><h2>2</h2>',
+		'<h1>H</h1><h1 class="blue">N<p>+5</p></h1><h1>O</h1><h2>3</h2>',
+		'<h1 class="blue">Si<p>+4</p></h1><h1>O</h1><h2>2</h2>',
+		'<h1></h1><h1 class="blue">O<p>0</p></h1><h2>2</h2>',
+		'<h1 class="blue">N<p>-3</p></h1><h1>H</h1><h2>3</h2>',
 		
-		'<h1>Na</h1><h1 class="blue">Cl</h1>',
-		'<h1>Na</h1><h1 class="blue">N</h1><h1>O</h1><h2>2</h2>',
-		'<h1 class="blue">Na</h1><h1>Cl</h1>',
-		'<h1>Na</h1><h2>2</h2>2<h1 class="blue">S</h1><h1>O</h1><h2>4</h2>',
-		'<h1>Na</h1><h2>2</h2><h1 class="blue">S</h1><h1>O</h1><h2>3</h2>',
+		'<h1>Na</h1><h1 class="blue">Cl<p>+1</p></h1>',
+		'<h1>Na</h1><h1 class="blue">N<p>+3</p></h1><h1>O</h1><h2>2</h2>',
+		'<h1 class="blue">Na<p>+1</p></h1><h1>Cl</h1>',
+		'<h1>Na</h1><h2>2</h2><h1 class="blue">S<p>+6</p></h1><h1>O</h1><h2>4</h2>',
+		'<h1>Na</h1><h2>2</h2><h1 class="blue">S<p>+4</p></h1><h1>O</h1><h2>3</h2>',
 		
-		'<h1>Na</h1><h2>2</h2><h1 class="blue">Si</h1><h1>O</h1><h2>3</h2>',
-		'<h1>Na</h1><h2>2</h2><h1>H</h1><h1 class="blue">C</h1><h1>O</h1><h2>3</h2>',
-		'<h1>Na</h1><h2>2</h2><h1 class="blue">C</h1><h1>O</h1><h2>3</h2>',
-		'<h1 class="blue">Mn</h1><h1>CO</h1><h2>3</h2>',
-		'<h1>K</h1><h1 class="blue">Mn</h1><h1>O</h1><h2>4</h2>',
+		'<h1>Na</h1><h2>2</h2><h1 class="blue">Si<p>+4</p></h1><h1>O</h1><h2>3</h2>',
+		'<h1>Na</h1><h2>2</h2><h1>H</h1><h1 class="blue">C<p>+4</p></h1><h1>O</h1><h2>3</h2>',
+		'<h1>Na</h1><h2>2</h2><h1 class="blue">C<p>+4</p></h1><h1>O</h1><h2>3</h2>',
+		'<h1 class="blue">Mn<p>+2</p></h1><h1>CO</h1><h2>3</h2>',
+		'<h1>K</h1><h1 class="blue">Mn<p>+7</p></h1><h1>O</h1><h2>4</h2>',
 		
-		'<h1>K</h1><h1 class="blue">Cl</h1><h1>O</h1><h2>3</h2>',
-		'<h1>K</h1><h2>2</h2><h1 class="blue">Mn</h1><h1>O</h1><h2>4</h2>',
-		'<h1>H</h1><h1 class="blue">Cl</h1><h1>O</h1><h2>4</h2>',
-		'<h1>H</h1><h1 class="blue">Cl</h1><h1>O</h1>',
-		'<h1>H</h1><h2>3</h2><h1 class="blue">B</h1><h1>O</h1><h2>3</h2>',
-		'<h1>H</h1><h2>2</h2><h1 class="blue">O</h1>'
+		'<h1>K</h1><h1 class="blue">Cl<p>+5</p></h1><h1>O</h1><h2>3</h2>',
+		'<h1>K</h1><h2>2</h2><h1 class="blue">Mn<p>+6</p></h1><h1>O</h1><h2>4</h2>',
+		'<h1>H</h1><h1 class="blue">Cl<p>+7</p></h1><h1>O</h1><h2>4</h2>',
+		'<h1>H</h1><h1 class="blue">Cl<p>+1</p></h1><h1>O</h1>',
+		'<h1>H</h1><h2>3</h2><h1 class="blue">B<p>+3</p></h1><h1>O</h1><h2>3</h2>',
+		'<h1>H</h1><h2>2</h2><h1 class="blue">O<p>-2</p></h1>'
 	]
 	
 	var ansArr = [
@@ -128,7 +128,6 @@ $(function(){
 				pageContorller.changeQus();
 			})
 		}
-		
 	}
 	pageContorller.socalShow = function(){
 		setTimeout(function(){
@@ -139,15 +138,14 @@ $(function(){
 				(i-3)%4==0?cla = "class = 'rightBorder'" : cla=""
 				i> 11 ?cla = "class = 'bottomBorder'" : cla=cla
 				if(result[i][1] == result[i][2]){
-					index+="<li "+cla+"><p>"+result[i][1]+"</p><div class='scoreGroup'>"+result[i][0]+"</div></li>"
+					index+="<li "+cla+"><p></p><div class='scoreGroup'>"+result[i][0]+"</div></li>"
 				}else{
-					index+="<li "+cla+"><p>"+result[i][1]+"</p><div class='scoreGroup wrong'>"+result[i][0]+"</div><img src='img/wrong_img.svg'/></li>"
+					index+="<li "+cla+"><p></p><div class='scoreGroup wrong'>"+result[i][0]+"</div><img src='img/wrong_img.svg'/></li>"
 				}
 			}
 			index+="<li></li>"
 			$(".score ul").html(index);
 		},2000)
-		
 	}
 	init()
 	function init(){
