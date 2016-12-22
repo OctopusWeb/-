@@ -1,4 +1,5 @@
 $(function(){
+	var pArr =[];
 	var qusArr = [
 		'<h1 class="blue">Cl<p>+4</p></h1><h1>O</h1><h2>2</h2>',
 		'<h1 class="blue">C<p>+4</p></h1><h1>O</h1><h2>2</h2>',
@@ -46,43 +47,41 @@ $(function(){
 		$(".hui-last").hide();
 		$(".hui-img,.hui-title,.hui-btngroup,.hui-foot").show();
 		qusArr = [
-			'<h1 class="blue">Cl</h1><h1>O</h1><h2>2</h2>',
-			'<h1 class="blue">C</h1><h1>O</h1><h2>2</h2>',
-			'<h1 class="blue">Fe</h1><h1>O</h1>',
-			'<h1 class="blue">Fe</h1><h1>(OH)</h1><h2>3</h2>',
-			'<h1 class="blue">Fe</h1><h2>2</h2><h1>O</h1><h2>3</h2>',
-			'<h1 class="blue">S</h1><h1>O</h1><h2>2</h2>',
-			'<h1>H</h1><h1 class="blue">N</h1><h1>O</h1><h2>3</h2>',
-			'<h1 class="blue">Si</h1><h1>O</h1><h2>2</h2>',
-			'<h1></h1><h1 class="blue">O</h1><h2>2</h2>',
-			'<h1 class="blue">N</h1><h1>H</h1><h2>3</h2>',
-			
-			'<h1>Na</h1><h1 class="blue">Cl</h1>',
-			'<h1>Na</h1><h1 class="blue">N</h1><h1>O</h1><h2>2</h2>',
-			'<h1 class="blue">Na</h1><h1>Cl</h1>',
-			'<h1>Na</h1><h2>2</h2>2<h1 class="blue">S</h1><h1>O</h1><h2>4</h2>',
-			'<h1>Na</h1><h2>2</h2><h1 class="blue">S</h1><h1>O</h1><h2>3</h2>',
-			
-			'<h1>Na</h1><h2>2</h2><h1 class="blue">Si</h1><h1>O</h1><h2>3</h2>',
-			'<h1>Na</h1><h2>2</h2><h1>H</h1><h1 class="blue">C</h1><h1>O</h1><h2>3</h2>',
-			'<h1>Na</h1><h2>2</h2><h1 class="blue">C</h1><h1>O</h1><h2>3</h2>',
-			'<h1 class="blue">Mn</h1><h1>CO</h1><h2>3</h2>',
-			'<h1>K</h1><h1 class="blue">Mn</h1><h1>O</h1><h2>4</h2>',
-			
-			'<h1>K</h1><h1 class="blue">Cl</h1><h1>O</h1><h2>3</h2>',
-			'<h1>K</h1><h2>2</h2><h1 class="blue">Mn</h1><h1>O</h1><h2>4</h2>',
-			'<h1>H</h1><h1 class="blue">Cl</h1><h1>O</h1><h2>4</h2>',
-			'<h1>H</h1><h1 class="blue">Cl</h1><h1>O</h1>',
-			'<h1>H</h1><h2>3</h2><h1 class="blue">B</h1><h1>O</h1><h2>3</h2>',
-			'<h1>H</h1><h2>2</h2><h1 class="blue">O</h1>'
+		'<h1 class="blue">Cl<p>+4</p></h1><h1>O</h1><h2>2</h2>',
+		'<h1 class="blue">C<p>+4</p></h1><h1>O</h1><h2>2</h2>',
+		'<h1 class="blue">Fe<p>+2</p></h1><h1>O</h1>',
+		'<h1 class="blue">Fe<p>+3</p></h1><h1>(OH)</h1><h2>3</h2>',
+		'<h1 class="blue">Fe<p>+3</p></h1><h2>2</h2><h1>O</h1><h2>3</h2>',
+		'<h1 class="blue">S<p>+4</p></h1><h1>O</h1><h2>2</h2>',
+		'<h1>H</h1><h1 class="blue">N<p>+5</p></h1><h1>O</h1><h2>3</h2>',
+		'<h1 class="blue">Si<p>+4</p></h1><h1>O</h1><h2>2</h2>',
+		'<h1></h1><h1 class="blue">O<p>0</p></h1><h2>2</h2>',
+		'<h1 class="blue">N<p>-3</p></h1><h1>H</h1><h2>3</h2>',
+		
+		'<h1>Na</h1><h1 class="blue">Cl<p>+1</p></h1>',
+		'<h1>Na</h1><h1 class="blue">N<p>+3</p></h1><h1>O</h1><h2>2</h2>',
+		'<h1 class="blue">Na<p>+1</p></h1><h1>Cl</h1>',
+		'<h1>Na</h1><h2>2</h2><h1 class="blue">S<p>+6</p></h1><h1>O</h1><h2>4</h2>',
+		'<h1>Na</h1><h2>2</h2><h1 class="blue">S<p>+4</p></h1><h1>O</h1><h2>3</h2>',
+		
+		'<h1>Na</h1><h2>2</h2><h1 class="blue">Si<p>+4</p></h1><h1>O</h1><h2>3</h2>',
+		'<h1>Na</h1><h2>2</h2><h1>H</h1><h1 class="blue">C<p>+4</p></h1><h1>O</h1><h2>3</h2>',
+		'<h1>Na</h1><h2>2</h2><h1 class="blue">C<p>+4</p></h1><h1>O</h1><h2>3</h2>',
+		'<h1 class="blue">Mn<p>+2</p></h1><h1>CO</h1><h2>3</h2>',
+		'<h1>K</h1><h1 class="blue">Mn<p>+7</p></h1><h1>O</h1><h2>4</h2>',
+		
+		'<h1>K</h1><h1 class="blue">Cl<p>+5</p></h1><h1>O</h1><h2>3</h2>',
+		'<h1>K</h1><h2>2</h2><h1 class="blue">Mn<p>+6</p></h1><h1>O</h1><h2>4</h2>',
+		'<h1>H</h1><h1 class="blue">Cl<p>+7</p></h1><h1>O</h1><h2>4</h2>',
+		'<h1>H</h1><h1 class="blue">Cl<p>+1</p></h1><h1>O</h1>',
+		'<h1>H</h1><h2>3</h2><h1 class="blue">B<p>+3</p></h1><h1>O</h1><h2>3</h2>',
+		'<h1>H</h1><h2>2</h2><h1 class="blue">O<p>-2</p></h1>'
 		]
 		
 		ansArr = [
 			"+4","+4","+2","+3","+3","+4","+5","+4","0","-3","+1","+3","+1","+6","+4","+4","+4","+4","+2","+7","+5","+6","+7","+1","+3","-2"
 		]
-		result=[];
-		socal=0;
-		qusNum=0;
+		
 		$(".foot-center-box").css({"width":0+"%"});
 		$(".foot-num").html(0+"/15");
 		$(".hui-btn").removeClass("selectedBtn");
@@ -91,6 +90,9 @@ $(function(){
 		$(".foot-num").html(qusNum+"/15");
 		$(".hui-img").addClass("kapai");
 		var mathDom = parseInt(Math.random()*qusArr.length);
+		result=[];
+		socal=0;
+		qusNum=0;
 		
 	})
 	
@@ -130,21 +132,29 @@ $(function(){
 		}
 	}
 	pageContorller.socalShow = function(){
+		var index="";
+		for(var i=0;i<result.length;i++){
+			(i-3)%4==0?cla = "class = 'rightBorder'" : cla=""
+			i> 11 ?cla = "class = 'bottomBorder'" : cla=cla
+			if(result[i][1] == result[i][2]){
+				index+="<li "+cla+"><div class='scoreGroup'>"+result[i][0]+"</div></li>"
+			}else{
+				index+="<li "+cla+"><div class='scoreGroup wrong'>"+result[i][0]+"</div><img src='img/wrong_img.svg'/></li>"
+			}
+		}
+		index+="<li></li>"
+		$(".score ul").html(index);
 		setTimeout(function(){
 			$(".hui-last").show();
 			$(".hui-img,.hui-title,.hui-btngroup,.hui-foot").hide();
-			var index="";
-			for(var i=0;i<result.length;i++){
-				(i-3)%4==0?cla = "class = 'rightBorder'" : cla=""
-				i> 11 ?cla = "class = 'bottomBorder'" : cla=cla
-				if(result[i][1] == result[i][2]){
-					index+="<li "+cla+"><p></p><div class='scoreGroup'>"+result[i][0]+"</div></li>"
+			for (var i=0;i<$(".score ul li").length-1;i++) {
+				if(i==0 && result[i][3]){
+					$(".score ul li").eq(i).find("p").html(result[i][3])
 				}else{
-					index+="<li "+cla+"><p></p><div class='scoreGroup wrong'>"+result[i][0]+"</div><img src='img/wrong_img.svg'/></li>"
+					$(".score ul li").eq(i).find("p").html(result[i][2])
 				}
+				
 			}
-			index+="<li></li>"
-			$(".score ul").html(index);
 		},2000)
 	}
 	init()
