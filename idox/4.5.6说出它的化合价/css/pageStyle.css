@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 #content{margin-bottom: 2rem;}
-=======
->>>>>>> 4d6319a5a0606ea77b5532b4718f113700b89d7e
 .hui-img{border-radius: 0.05rem;width: 6rem;height: 3rem;margin: 0 auto;overflow: hidden;position: relative;}
 .hui-img .imgs{width: 100%;}
 .hui-btngroup{margin: 0 auto;}
@@ -33,11 +30,7 @@ font-size:0.2rem;text-align: center;}
 #reset{width: 1.53rem;margin-left: 40%;margin-top: 0.2rem;}
 
 .score .scoreGroup{width: 100%;margin-left: 0.8rem;margin-top: 0.5rem;}
-<<<<<<< HEAD
 .score ul li{width: 2.12rem;height: 1.16rem;border-bottom: 0.01rem solid #00ffc6;float: left;position: relative;
-=======
-.score ul li{width: 2.14rem;height: 1.16rem;border-bottom: 0.01rem solid #00ffc6;float: left;position: relative;
->>>>>>> 4d6319a5a0606ea77b5532b4718f113700b89d7e
 border-right: 0.01rem solid #00ffc6;text-align: center;}
 .score ul li h1{color: #fff;font-size: 0.3rem;float: left;line-height: 0.3rem;position: relative;}
 .hui-group  p{display: none;}
